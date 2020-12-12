@@ -1,0 +1,60 @@
+{
+  "name": "appstore-connect-jwt-generator-core",
+  "version": "0.0.1",
+  "author": "poad",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/poad/appstore-connect-jwt-generator-core#readme",
+  "main": "./dist/index.js",
+  "bin": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poad/appstore-connect-jwt-generator-core.git"
+  },
+  "keywords": [
+    "jwt",
+    "appstore"
+  ],
+  "scripts": {
+    "prepare": "rm -rf dist && tsc",
+    "test": "NODE_ENV=test jest --coverage --passWithNoTests",
+    "clean": "rm -rf dist",
+    "tsc": "tsc",
+    "build": "yarn clean && yarn tsc",
+    "dev": "ts-node",
+    "lint": "eslint src/**/*.ts src/*.ts"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.12",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.3.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

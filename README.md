@@ -1,1 +1,1 @@
-# jwt-token-generator
+# appstore-connect-jwt-token-generator
