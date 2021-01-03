@@ -1,6 +1,6 @@
 {
   "name": "appstore-connect-jwt-generator-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "poad",
   "license": "MIT",
   "private": false,
