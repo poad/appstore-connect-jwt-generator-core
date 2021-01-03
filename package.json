@@ -1,12 +1,13 @@
 {
   "name": "appstore-connect-jwt-generator-core",
-  "version": "0.0.3-rc0",
+  "version": "0.0.3-rc1",
   "author": "poad",
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/poad/appstore-connect-jwt-generator-core#readme",
   "main": "./dist/index.js",
-  "bin": "./dist/*",
+  "bin": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poad/appstore-connect-jwt-generator-core.git"
