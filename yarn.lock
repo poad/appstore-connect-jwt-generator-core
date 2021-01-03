@@ -883,6 +883,22 @@ anymatch@^3.0.3:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+"appstore-connect-jwt-generator-core@file:.":
+  version "0.0.3"
+  dependencies:
+    "@types/jsonwebtoken" "^8.5.0"
+    appstore-connect-jwt-generator-core "file:."
+    jsonwebtoken "^8.5.1"
+    log4js "^6.3.0"
+
+"appstore-connect-jwt-generator-core@file:///Users/ken-yo/git/appstore-connect-jwt-generator-core/":
+  version "0.0.3"
+  dependencies:
+    "@types/jsonwebtoken" "^8.5.0"
+    appstore-connect-jwt-generator-core "file:."
+    jsonwebtoken "^8.5.1"
+    log4js "^6.3.0"
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz"
