@@ -20,4 +20,4 @@ const token = jwt.tokenSync(cert, 'App Store Connect Issuer ID', 'App Store Conn
 
 ## Refernce
 
-[https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests]
+https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests
