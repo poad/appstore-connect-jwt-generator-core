@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  push:
+    branches:    
+    - main 
   pull_request:
     branches: [ main ]
 
@@ -44,5 +47,13 @@ jobs:
           yarn lint
 
       - name: Test
+        env:
+          APPSTORE_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID }}
+          APPSTORE_KEY_ID: ${{ secrets.APPSTORE_KEY_ID }}
+          APPSTORE_PRIVATE_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+          APPSTORE_PRIVATE_KEY_FILE_PATH: '/tmp/privateKey.p8'
+          NODE_ENV: test
         run: |
+          echo ${APPSTORE_PRIVATE_KEY} | base64 -d > ${APPSTORE_PRIVATE_KEY_FILE_PATH}
+          echo "" >> ${APPSTORE_PRIVATE_KEY_FILE_PATH}
           yarn test
