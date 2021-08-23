@@ -23,7 +23,16 @@ jobs:
         yarn: true
 
     - name: update and test
+      env:
+        APPSTORE_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID }}
+        APPSTORE_KEY_ID: ${{ secrets.APPSTORE_KEY_ID }}
+        APPSTORE_PRIVATE_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+        APPSTORE_PRIVATE_KEY_FILE_PATH: '/tmp/privateKey.p8'
+        NODE_ENV: test
       run: |
+        echo ${APPSTORE_PRIVATE_KEY} | base64 -d > ${APPSTORE_PRIVATE_KEY_FILE_PATH}
+        echo "" >> ${APPSTORE_PRIVATE_KEY_FILE_PATH}
+        sudo rm -rf dist && \
         yarn install && \
         yarn build && \
         yarn test && \
@@ -83,18 +92,22 @@ jobs:
 
     - name: Send result with Pull Request
       if: success() && env.CHANGE_STATE == 'changed'
-      uses: ./.github/actions/slack_notificator
+      uses: slackapi/slack-github-action@v1.15.0
       with:
-        webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        text: ${{ format('{0} {1}\nPull Request <{2}>', github.workflow, job.status, env.PULL_REQUEST_HTML_URL) }}
+        payload: "${{ env.SLACKK_PAYLOAD }}"
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACKK_PAYLOAD: ${{ format('{0} {1}\nPull Request <{2}>', github.workflow, job.status, env.PULL_REQUEST_HTML_URL) }}
 
     - name: Send result without Pull Request
       if: success() && env.CHANGE_STATE != 'changed'
-      uses: ./.github/actions/slack_notificator
+      uses: slackapi/slack-github-action@v1.15.0
       with:
-        webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        text: ${{ format('{0} {1}', github.workflow, job.status) }}
-      
+        payload: "{ \"text\": \"${{ env.SLACKK_PAYLOAD }}\" }"
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACKK_PAYLOAD: ${{ format('{0} {1}', github.workflow, job.status) }}
+
     - name: Pull request auto merge enabler
       if: success() && env.CHANGE_STATE == 'changed'
       uses: poad/github-pull-request-auto-merge-enable-action@v1.0.0
