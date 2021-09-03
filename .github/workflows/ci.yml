@@ -50,6 +50,7 @@ jobs:
           yarn lint
 
       - name: Test
+        if: github.actor != 'dependabot[bot]'
         env:
           APPSTORE_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID }}
           APPSTORE_KEY_ID: ${{ secrets.APPSTORE_KEY_ID }}
