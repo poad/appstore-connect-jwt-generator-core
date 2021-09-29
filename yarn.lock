@@ -2563,22 +2563,7 @@ jest-matcher-utils@^27.2.3:
     jest-get-type "^27.0.6"
     pretty-format "^27.2.3"
 
-jest-message-util@^27.2.2:
-  version "27.2.2"
-  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-27.2.2.tgz#cdbb1b82dfe5f601ae35f5c6a28bf7823e6bcf99"
-  integrity sha512-/iS5/m2FSF7Nn6APFoxFymJpyhB/gPf0CJa7uFSkbYaWvrADUfQ9NTsuyjpszKErOS2/huFs44ysWhlQTKvL8Q==
-  dependencies:
-    "@babel/code-frame" "^7.12.13"
-    "@jest/types" "^27.1.1"
-    "@types/stack-utils" "^2.0.0"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.4"
-    micromatch "^4.0.4"
-    pretty-format "^27.2.2"
-    slash "^3.0.0"
-    stack-utils "^2.0.3"
-
-jest-message-util@^27.2.3:
+jest-message-util@^27.2.2, jest-message-util@^27.2.3:
   version "27.2.3"
   resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-27.2.3.tgz#cd1091a3f0f3ff919756b15cfccc0ba43eeeeff0"
   integrity sha512-yjVqTQ2Ds1WCGXsTuW0m1uK8RXOE44SJDw7tWUrhn6ZttWDbPmLhH8npDsGGfAmSayKFSo2C0NX0tP2qblc3Gw==
