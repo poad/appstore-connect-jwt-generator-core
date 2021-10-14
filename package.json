@@ -30,7 +30,7 @@
     "@swc/core": "^1.2.95",
     "@swc/helpers": "^0.2.13",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.8",
+    "@types/node": "^16.10.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "chokidar": "^3.5.2",
