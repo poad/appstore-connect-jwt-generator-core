@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.51",
-    "@swc/core": "^1.2.95",
+    "@swc/core": "^1.2.96",
     "@swc/helpers": "^0.2.13",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.9",
