@@ -501,14 +501,10 @@
   resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-27.3.0.tgz#f2a63883eaada30f8141938ec1ad23ba7fdfb97e"
   integrity sha512-IKrFhIT/+WIfeNjIRKTwQN7HYCdjKF/mmBqoD660gyGWVw1MzCO9pQuEJK9GXEnFWIuOcMHlm8XfUaDohP/zxA==
   dependencies:
-    "@babel/core" "^7.1.0"
-    "@jest/types" "^27.2.5"
-    babel-plugin-istanbul "^6.0.0"
-    chalk "^4.0.0"
-    convert-source-map "^1.4.0"
-    fast-json-stable-stringify "^2.0.0"
+    "@jest/test-result" "^27.3.0"
     graceful-fs "^4.2.4"
     jest-haste-map "^27.3.0"
+    jest-runtime "^27.3.0"
     jest-regex-util "^27.0.6"
     jest-util "^27.3.0"
     micromatch "^4.0.4"
@@ -2107,7 +2103,7 @@ jest-diff@^27.0.0:
     jest-get-type "^27.0.6"
     pretty-format "^27.2.5"
 
-jest-diff@^27.3.0:
+jest-diff@^27.0.0, jest-diff@^27.3.0:
   version "27.3.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-27.3.0.tgz#4d6f6f9d34f7e2a359b3c7eb142bba4de1e37695"
   integrity sha512-Nl2rE58B2ye+RvPcU4hN+6wBCHxX7aWz6RMTMFxe9jAg8ZueMj5QQ+T/nmHRutbBc5BEjrbbEWOrRzp9rUEsYA==
