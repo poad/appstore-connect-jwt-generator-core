@@ -1,9 +1,4 @@
 {
-  "ts-node": {
-    "transpileOnly": true,
-    "transpiler": "ts-node/transpilers/swc-experimental",
-    "files": true,
-  },
   "compilerOptions": {
     "target": "es2021",
     "module": "commonjs",
