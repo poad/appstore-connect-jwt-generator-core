@@ -371,7 +371,7 @@
     jest-util "^27.4.0"
     slash "^3.0.0"
 
-"@jest/core@^27.3.1", "@jest/core@^27.4.0":
+"@jest/core@^27.4.0":
   version "27.4.0"
   resolved "https://registry.yarnpkg.com/@jest/core/-/core-27.4.0.tgz#99df49f41c3941a0f602e902cba939cfbcc96efc"
   integrity sha512-P6eoNIbE0OeenvCxrwdj0jRgeZg8r4eXNCS2zMgAS8EADzdp03mKe7TNwCsEPr460QIYCBwJo4W8wqai3UPXOA==
@@ -774,6 +774,14 @@
     is-glob "^4.0.3"
     semver "^7.3.5"
     tsutils "^3.21.0"
+
+"@typescript-eslint/visitor-keys@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.5.0.tgz#4787586897b61f26068a3db5c50b3f5d254f9083"
+  integrity sha512-4GzJ1kRtsWzHhdM40tv0ZKHNSbkDhF0Woi/TDwVJX6UICwJItvP7ZTXbjTkCdrors7ww0sYe0t+cIKDAJwZ7Kw==
+  dependencies:
+    "@typescript-eslint/types" "5.5.0"
+    eslint-visitor-keys "^3.0.0"
 
 "@typescript-eslint/visitor-keys@5.5.0":
   version "5.5.0"
@@ -1942,7 +1950,7 @@ jest-circus@^27.4.0:
     stack-utils "^2.0.3"
     throat "^6.0.1"
 
-jest-cli@^27.3.1:
+jest-cli@^27.4.0:
   version "27.4.0"
   resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-27.4.0.tgz#d55a1465d6e8502a32e47831497ce3f72892265d"
   integrity sha512-cTL2ORt/ha+x6KJfVp0oTAyPmHVw7IJ+lA3kmT/kNcWoCiKa+t/JlF5x+nJ0UfL3/IQLV+ysYgu8MjGM8WXH+w==
@@ -2311,14 +2319,14 @@ jest-worker@^27.4.0:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^27.3.1:
-  version "27.3.1"
-  resolved "https://registry.yarnpkg.com/jest/-/jest-27.3.1.tgz#b5bab64e8f56b6f7e275ba1836898b0d9f1e5c8a"
-  integrity sha512-U2AX0AgQGd5EzMsiZpYt8HyZ+nSVIh5ujQ9CPp9EQZJMjXIiSZpJNweZl0swatKRoqHWgGKM3zaSwm4Zaz87ng==
+jest@^27.4.0:
+  version "27.4.0"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-27.4.0.tgz#defb188c80e5f99d8f43398d334f97164a9a7aec"
+  integrity sha512-54SYE6EmGRoHS+9/OCspbb7tAD2WYAvBBXmny2Zp39/QgnNIWZD4KujhAZyRXHWASTBa9/WfXM2oekNBIOFV2A==
   dependencies:
-    "@jest/core" "^27.3.1"
+    "@jest/core" "^27.4.0"
     import-local "^3.0.2"
-    jest-cli "^27.3.1"
+    jest-cli "^27.4.0"
 
 js-tokens@^4.0.0:
   version "4.0.0"
