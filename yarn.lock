@@ -405,27 +405,27 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/environment@^27.4.0":
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-27.4.0.tgz#3d7c162904d8ec5e5020c17d1276943d36402562"
-  integrity sha512-7HJ1c6lVNuxrj9PT5AD4yVDDqFt9B0lLsshxZJXShL/LOkLnBO4MoZMH3w1lXQJY3zxk3/l1yg2j7uRKpxF4yw==
+"@jest/environment@^27.4.0", "@jest/environment@^27.4.2":
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-27.4.2.tgz#03efabce528dbb09bffd3ec7e39bb0f3f7475cc2"
+  integrity sha512-uSljKxh/rGlHlmhyeG4ZoVK9hOec+EPBkwTHkHKQ2EqDu5K+MaG9uJZ8o1CbRsSdZqSuhXvJCYhBWsORPPg6qw==
   dependencies:
-    "@jest/fake-timers" "^27.4.0"
-    "@jest/types" "^27.4.0"
+    "@jest/fake-timers" "^27.4.2"
+    "@jest/types" "^27.4.2"
     "@types/node" "*"
-    jest-mock "^27.4.0"
+    jest-mock "^27.4.2"
 
-"@jest/fake-timers@^27.4.0":
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-27.4.0.tgz#541638975bad78e90fe2aed9f9e9d43709972410"
-  integrity sha512-oyMxDKlj/ThRms9eS0xFkxmUvjJ8lHsNS4gNErDRFSruTER1/OQi2L5N0sJav+/AcBoY/Pa313CpB6RgdDacGA==
+"@jest/fake-timers@^27.4.0", "@jest/fake-timers@^27.4.2":
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-27.4.2.tgz#d217f86c3ba2027bf29e0b731fd0cb761a72d093"
+  integrity sha512-f/Xpzn5YQk5adtqBgvw1V6bF8Nx3hY0OIRRpCvWcfPl0EAjdqWPdhH3t/3XpiWZqtjIEHDyMKP9ajpva1l4Zmg==
   dependencies:
-    "@jest/types" "^27.4.0"
+    "@jest/types" "^27.4.2"
     "@sinonjs/fake-timers" "^8.0.1"
     "@types/node" "*"
-    jest-message-util "^27.4.0"
-    jest-mock "^27.4.0"
-    jest-util "^27.4.0"
+    jest-message-util "^27.4.2"
+    jest-mock "^27.4.2"
+    jest-util "^27.4.2"
 
 "@jest/globals@^27.4.0":
   version "27.4.0"
@@ -2050,17 +2050,17 @@ jest-each@^27.4.0:
     pretty-format "^27.4.0"
 
 jest-environment-jsdom@^27.4.0:
-  version "27.4.0"
-  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-27.4.0.tgz#9dc626b5f24121a3fc8206d285caaf17efd88ea0"
-  integrity sha512-fgM6g4WftTTpRA8dB5FnmS3n+PthwjTdMwl/Lcq2QlCo0I5smyD+t82bzO9tX5w6ygxbCbnP4VkSWWYdqO4j+w==
+  version "27.4.2"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-27.4.2.tgz#176c8b3529bec1561bb07b48f2b9a5a656927908"
+  integrity sha512-L0dV4oq4+Ll7hZ8QCGvSELn8uOr938/QKOg6o70kMHiZOpWOjAqSf7fMVAtGhG/BVSvk1GTzhGJNOWsxtH5KbQ==
   dependencies:
-    "@jest/environment" "^27.4.0"
-    "@jest/fake-timers" "^27.4.0"
-    "@jest/types" "^27.4.0"
+    "@jest/environment" "^27.4.2"
+    "@jest/fake-timers" "^27.4.2"
+    "@jest/types" "^27.4.2"
     "@types/jsdom" "^16.2.4"
     "@types/node" "*"
-    jest-mock "^27.4.0"
-    jest-util "^27.4.0"
+    jest-mock "^27.4.2"
+    jest-util "^27.4.2"
     jsdom "^16.6.0"
 
 jest-environment-node@^27.4.0:
@@ -2182,7 +2182,7 @@ jest-message-util@^27.4.2:
     slash "^3.0.0"
     stack-utils "^2.0.3"
 
-jest-mock@^27.4.0:
+jest-mock@^27.4.0, jest-mock@^27.4.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-27.4.2.tgz#184ff197a25491bfe4570c286daa5d62eb760b88"
   integrity sha512-PDDPuyhoukk20JrQKeofK12hqtSka7mWH0QQuxSNgrdiPsrnYYLS6wbzu/HDlxZRzji5ylLRULeuI/vmZZDrYA==
