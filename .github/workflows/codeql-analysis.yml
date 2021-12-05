@@ -20,6 +20,16 @@ on:
   schedule:
     - cron: '44 12 * * 4'
 
+permissions:
+  actions: read
+  checks: write
+  contents: none
+  deployments: none
+  issues: none
+  packages: none
+  repository-projects: none
+  statuses: write
+
 jobs:
   analyze:
     name: Analyze
