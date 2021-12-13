@@ -20,7 +20,7 @@
     "prepare": "yarn build",
     "test": "jest --coverage --passWithNoTests",
     "clean": "rm -rf dist",
-    "tsc": "swc --delete-dir-on-start src/*.ts -d dist",
+    "tsc": "swc --delete-dir-on-start src/*.ts -d dist && tsc --emitDeclarationOnly -p tsconfig-prod.json",
     "build": "yarn clean && yarn tsc",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src/**/*.ts src/*.ts"
