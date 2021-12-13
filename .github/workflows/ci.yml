@@ -51,13 +51,7 @@ jobs:
           check-latest: true
           cache: yarn
       - name: Build
-        run: |
-          yarn install
-          yarn build
-
-      - name: Lint
-        run: |
-          yarn lint
+        run: yarn install && yarn lint && yarn build
 
       - name: Test
         if: github.actor != 'dependabot[bot]'
@@ -70,4 +64,4 @@ jobs:
         run: |
           echo ${APPSTORE_PRIVATE_KEY} | base64 -d > ${APPSTORE_PRIVATE_KEY_FILE_PATH}
           echo "" >> ${APPSTORE_PRIVATE_KEY_FILE_PATH}
-          yarn test
+          yarn build && yarn test
