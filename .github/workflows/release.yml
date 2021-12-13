@@ -1,0 +1,51 @@
+name: Automatic release
+on:
+  release:
+    types:
+      - published
+
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  checks: write
+  contents: none
+  deployments: none
+  issues: none
+  packages: none
+  repository-projects: none
+  statuses: write
+
+jobs:
+  release:
+    name: check version, add tag and release
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: setup Node
+        uses: actions/setup-node@v1
+        env :
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+          node-version: 16.x
+          registry-url: 'https://registry.npmjs.org'
+          scope       : 'appstore-connect-jwt-generator-core'
+          always-auth : true
+
+      - name: Can Publish
+        run : npx can-npm-publish --verbose
+        env :
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Install
+        run : yarn install
+        env :
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Build
+        run : yarn build
+        env :
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish
+        run : npm publish --access=public
+        env :
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
