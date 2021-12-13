@@ -25,12 +25,12 @@
   },
   "sourceMaps": true,
   "inlineSourcesContent": true,
-  "minify": true,
+  "minify": false,
   "module": {
     "type": "es6",
-    "strict": true,
+    "strict": false,
     "strictMode": true,
-    "lazy": false,
-    "noInterop": false
+    "lazy": true,
+    "noInterop": true
   }
 }
