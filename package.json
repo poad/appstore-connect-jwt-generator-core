@@ -20,12 +20,15 @@
     "prepare": "yarn build",
     "test": "jest --coverage --passWithNoTests",
     "clean": "rm -rf dist",
-    "tsc": "tsc --project tsconfig-prod.json",
+    "tsc": "swc src/*.ts -o dist",
     "build": "yarn clean && yarn tsc",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src/**/*.ts src/*.ts"
   },
   "devDependencies": {
+    "@swc/cli": "^0.1.53",
+    "@swc/core": "^1.2.119",
+    "@swc/jest": "^0.2.14",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -44,7 +47,7 @@
     "log4js": "^6.3.0"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
