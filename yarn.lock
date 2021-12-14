@@ -2343,14 +2343,14 @@ jest-resolve@^27.4.4, jest-resolve@^27.4.5:
     slash "^3.0.0"
 
 jest-runner@^27.4.4:
-  version "27.4.4"
-  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-27.4.4.tgz#0b40cdcbac293ebc4c19c2d7805d17ab1072f1fd"
-  integrity sha512-AXv/8Q0Xf1puWnDf52m7oLrK7sXcv6re0V/kItwTSVHJbX7Oebm07oGFQqGmq0R0mhO1zpmB3OpqRuaCN2elPA==
+  version "27.4.5"
+  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-27.4.5.tgz#daba2ba71c8f34137dc7ac45616add35370a681e"
+  integrity sha512-/irauncTfmY1WkTaRQGRWcyQLzK1g98GYG/8QvIPviHgO1Fqz1JYeEIsSfF+9mc/UTA6S+IIHFgKyvUrtiBIZg==
   dependencies:
     "@jest/console" "^27.4.2"
     "@jest/environment" "^27.4.4"
     "@jest/test-result" "^27.4.2"
-    "@jest/transform" "^27.4.4"
+    "@jest/transform" "^27.4.5"
     "@jest/types" "^27.4.2"
     "@types/node" "*"
     chalk "^4.0.0"
@@ -2360,17 +2360,17 @@ jest-runner@^27.4.4:
     jest-docblock "^27.4.0"
     jest-environment-jsdom "^27.4.4"
     jest-environment-node "^27.4.4"
-    jest-haste-map "^27.4.4"
+    jest-haste-map "^27.4.5"
     jest-leak-detector "^27.4.2"
     jest-message-util "^27.4.2"
-    jest-resolve "^27.4.4"
-    jest-runtime "^27.4.4"
+    jest-resolve "^27.4.5"
+    jest-runtime "^27.4.5"
     jest-util "^27.4.2"
-    jest-worker "^27.4.4"
+    jest-worker "^27.4.5"
     source-map-support "^0.5.6"
     throat "^6.0.1"
 
-jest-runtime@^27.4.4:
+jest-runtime@^27.4.4, jest-runtime@^27.4.5:
   version "27.4.5"
   resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-27.4.5.tgz#97703ad2a1799d4f50ab59049bd21a9ceaed2813"
   integrity sha512-CIYqwuJQXHQtPd/idgrx4zgJ6iCb6uBjQq1RSAGQrw2S8XifDmoM1Ot8NRd80ooAm+ZNdHVwsktIMGlA1F1FAQ==
@@ -2477,16 +2477,7 @@ jest-watcher@^27.4.2:
     jest-util "^27.4.2"
     string-length "^4.0.1"
 
-jest-worker@^27.4.4:
-  version "27.4.4"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.4.4.tgz#9390a97c013a54d07f5c2ad2b5f6109f30c4966d"
-  integrity sha512-jfwxYJvfua1b1XkyuyPh01ATmgg4e5fPM/muLmhy9Qc6dmiwacQB0MLHaU6IjEsv/+nAixHGxTn8WllA27Pn0w==
-  dependencies:
-    "@types/node" "*"
-    merge-stream "^2.0.0"
-    supports-color "^8.0.0"
-
-jest-worker@^27.4.5:
+jest-worker@^27.4.4, jest-worker@^27.4.5:
   version "27.4.5"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.4.5.tgz#d696e3e46ae0f24cff3fa7195ffba22889262242"
   integrity sha512-f2s8kEdy15cv9r7q4KkzGXvlY0JTcmCbMHZBfSQDwW77REr45IDWwd0lksDFeVHH2jJ5pqb90T77XscrjeGzzg==
