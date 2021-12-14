@@ -37,15 +37,15 @@
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.6.0",
+    "@typescript-eslint/parser": "^5.7.0",
     "chokidar": "^3.5.2",
     "enhanced-resolve": "^5.8.3",
     "eslint": "^8.4.1",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.1",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.4"
   },
   "dependencies": {
     "-": "^0.0.1",
