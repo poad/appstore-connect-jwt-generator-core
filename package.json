@@ -17,8 +17,12 @@
     "appstore"
   ],
   "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js"
+    ".": {
+      "node": "./dist/esm/main.js",
+      "default": "./dist/esm/main.js",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
   },
   "scripts": {
     "prepare": "yarn build",
