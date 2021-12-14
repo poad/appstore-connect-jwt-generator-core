@@ -1,13 +1,13 @@
 {
   "name": "appstore-connect-jwt-generator-core",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "poad",
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/poad/appstore-connect-jwt-generator-core#readme",
-  "main": "./dist/index.js",
-  "bin": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/esm/index.d.ts",
+  "main": "./dist/esm/index.js",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poad/appstore-connect-jwt-generator-core.git"
@@ -16,24 +16,30 @@
     "jwt",
     "appstore"
   ],
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
   "scripts": {
     "prepare": "yarn build",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --passWithNoTests",
     "clean": "rm -rf dist",
-    "tsc": "swc --delete-dir-on-start src/*.ts -d dist && tsc --emitDeclarationOnly -p tsconfig-prod.json",
-    "build": "yarn clean && yarn tsc",
+    "cjs": "tsc -p tsconfig-cjs.json",
+    "esm": "tsc -p tsconfig-esm.json",
+    "types": "tsc -p tsconfig-esm.json",
+    "build": "yarn clean && yarn cjs && yarn esm",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src/**/*.ts src/*.ts"
   },
   "devDependencies": {
-    "@swc/cli": "^0.1.53",
-    "@swc/core": "^1.2.119",
+    "@swc/core": "^1.2.120",
     "@swc/jest": "^0.2.14",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "chokidar": "^3.5.2",
+    "enhanced-resolve": "^5.8.3",
     "eslint": "^8.4.1",
     "jest": "^27.4.4",
     "prettier": "^2.5.1",
@@ -42,12 +48,14 @@
     "typescript": "^4.5.3"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@types/jsonwebtoken": "^8.5.6",
     "jsonwebtoken": "^8.5.1",
-    "log4js": "^6.3.0"
+    "log4js": "^6.3.0",
+    "regenerator-runtime": "^0.13.9"
   },
   "engines": {
-    "node": ">=14"
+    "node": "^14.13.1 || >=16.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
