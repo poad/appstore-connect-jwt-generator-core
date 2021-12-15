@@ -18,19 +18,16 @@
   ],
   "exports": {
     ".": {
-      "node": "./dist/esm/main.js",
-      "default": "./dist/esm/main.js",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
     }
   },
   "scripts": {
     "prepare": "yarn build",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --passWithNoTests",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "cjs": "tsc -p tsconfig-cjs.json",
     "esm": "tsc -p tsconfig-esm.json",
-    "types": "tsc -p tsconfig-esm.json",
     "build": "yarn clean && yarn cjs && yarn esm",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src/**/*.ts src/*.ts"
@@ -47,6 +44,7 @@
     "eslint": "^8.4.1",
     "jest": "^27.4.5",
     "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.1.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
