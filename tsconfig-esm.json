@@ -3,5 +3,5 @@
   "compilerOptions": {
     "module": "ESNext"
   },
-  "exclude": ["node_modules", "./dist", "**/*.test.ts", "./src/cjs"]
+  "exclude": ["node_modules", "./dist", "**/*.test.ts", "./src/cjs", "./src/index.ts"]
 }
