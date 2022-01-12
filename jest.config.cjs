@@ -7,7 +7,39 @@ module.exports = {
   testMatch: ['**/tests/*.test.ts'],
   transform: {
     // '^.+\\.ts$': 'ts-jest',
-    "^.+\\.(t|j)sx?$": ["@swc/jest"]
+    "^.+\\.(t|j)sx?$": ["@swc/jest", {
+      "jsc": {
+        "parser": {
+          "syntax": "typescript",
+          "tsx": false,
+          "decorators": true,
+          "dynamicImport": true
+        },
+        "minify": {
+          "compress": {
+            "unused": true
+          },
+          "mangle": true
+        },
+        "target": "es2021",
+        "transform": {
+          "optimizer": {
+            "jsonify": {
+              "minCost": 0
+            }
+          }
+        }
+      },
+      "minify": true,
+      "sourceMaps": true,
+      "module": {
+        "type": "es6",
+        "strict": true,
+        "strictMode": true,
+        "lazy": false,
+        "noInterop": false
+      }
+    }]
   },
   modulePaths: [
     "<rootDir>/dist",
