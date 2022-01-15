@@ -5,7 +5,6 @@
       "DOM",
       "ESNext"
     ],
-    "rootDir": "./src",
     "outDir": "./dist",
     "moduleResolution": "Node",
     "sourceMap": true,

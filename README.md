@@ -1,6 +1,5 @@
 # appstore-connect-jwt-token-generator-core
 
-[![NPM](https://nodei.co/npm/appstore-connect-jwt-generator-core.png)](https://nodei.co/npm/appstore-connect-jwt-generator-core/)
 [![npm version](https://badge.fury.io/js/appstore-connect-jwt-generator-core.svg)](https://badge.fury.io/js/appstore-connect-jwt-generator-core)
 
 Generate the JWT for App Store Connect API.
