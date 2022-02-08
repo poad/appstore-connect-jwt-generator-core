@@ -34,7 +34,7 @@
     "lint": "eslint src/esm/**/*.mts src/esm/*.mts src/cjs/**/*.cts src/cjs/*.cts src/*.ts"
   },
   "devDependencies": {
-    "@swc/core": "^1.2.136",
+    "@swc/core": "^1.2.137",
     "@swc/jest": "^0.2.17",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.16",
