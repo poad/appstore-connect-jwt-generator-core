@@ -137,3 +137,4 @@ package-lock.*
 
 src/*.d.*ts
 src/*.map
+.DS_Store
