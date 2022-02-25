@@ -24,7 +24,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
       - name: setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
