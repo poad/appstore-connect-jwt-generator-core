@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "package": "ncc build --source-map --license licenses.txt -m -q --target es2021",
+    "package": "ncc build --source-map --license licenses.txt -m -q",
     "test": "jest --coverage --silent=false --verbose false",
     "build": "tsc"
   },

@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "rootDirs": ["./src"],
     "sourceMap": false,
-    "outDir": "./lib",
+    "outDir": "./esm",
     "inlineSourceMap": true,
     "inlineSources": true,
     "esModuleInterop": true,
@@ -15,7 +15,7 @@
   },
   "exclude": [
     "node_modules",
-    "./lib",
+    "./esm",
     "**/*.test.ts",
     "tests"
   ]

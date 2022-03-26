@@ -1,6 +1,6 @@
 {
   "name": "appstore-connect-jwt-generator-core",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": "poad",
   "license": "MIT",
   "private": false,
@@ -17,9 +17,9 @@
   "type": "commonjs",
   "exports": {
     ".": {
-      "default": "./esm/index.mjs",
       "import": "./esm/index.mjs",
-      "require": "./lib/index.cjs"
+      "require": "./lib/index.cjs",
+      "default": "./esm/index.mjs"
     }
   },
   "module": "./esm/index.mjs",
