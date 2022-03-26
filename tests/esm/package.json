@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "package": "ncc build --source-map --license licenses.txt -m -q --target es2021",
-    "test": "jest --coverage --silent=false --verbose false",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --silent=false --verbose false",
     "build": "tsc"
   },
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@swc/core": "^1.2.160",
     "@swc/jest": "^0.2.20",
@@ -42,7 +42,7 @@
       "**/__tests__/*.test.cts"
     ],
     "transform": {
-      "^.+\\.c?(t|j)sx?$": [
+      "^.+\\.m?(t|j)sx?$": [
         "@swc/jest",
         {
           "jsc": {
@@ -70,7 +70,7 @@
           "minify": true,
           "sourceMaps": true,
           "module": {
-            "type": "commonjs",
+            "type": "es6",
             "strict": true,
             "strictMode": true,
             "lazy": true,

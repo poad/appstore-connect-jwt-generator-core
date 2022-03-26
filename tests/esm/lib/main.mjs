@@ -1,0 +1,8 @@
+import { tokenSync } from 'appstore-connect-jwt-generator-core';
+export const main = {
+    main: () => {
+        console.log(typeof tokenSync);
+    }
+};
+export default main;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5tanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbWFpbi5tdHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLHFDQUFxQyxDQUFDO0FBRWhFLE1BQU0sQ0FBQyxNQUFNLElBQUksR0FBRztJQUNoQixJQUFJLEVBQUUsR0FBRyxFQUFFO1FBQ1AsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLFNBQVMsQ0FBQyxDQUFDO0lBQ2xDLENBQUM7Q0FDSixDQUFDO0FBRUYsZUFBZSxJQUFJLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB0b2tlblN5bmMgfSBmcm9tICdhcHBzdG9yZS1jb25uZWN0LWp3dC1nZW5lcmF0b3ItY29yZSc7XG5cbmV4cG9ydCBjb25zdCBtYWluID0ge1xuICAgIG1haW46ICgpID0+IHtcbiAgICAgICAgY29uc29sZS5sb2codHlwZW9mIHRva2VuU3luYyk7XG4gICAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbWFpbjsiXX0=

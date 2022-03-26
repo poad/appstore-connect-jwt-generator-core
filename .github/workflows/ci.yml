@@ -4,20 +4,12 @@ on:
   push:
     branches:    
     - main 
-  pull_request:
+  pull_request_target:
     branches: [ main ]
 
   workflow_dispatch:
 
-permissions:
-  actions: read
-  checks: write
-  contents: none
-  deployments: none
-  issues: none
-  packages: none
-  repository-projects: none
-  statuses: write
+permissions: write-all
 
 jobs:
   configure:

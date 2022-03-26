@@ -1,3 +1,3 @@
-import { tokenSync } from 'appstore-connect-jwt-generator-core';
+const { tokenSync } = require('appstore-connect-jwt-generator-core');
 
 console.log(typeof tokenSync);
