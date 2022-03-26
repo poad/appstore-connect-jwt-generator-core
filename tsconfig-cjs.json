@@ -1,8 +1,9 @@
 {
   "extends": ".",
   "compilerOptions": {
-    "module": "commonjs"
+    "module": "commonjs",
+    "outDir": "./lib",
   },
-  "exclude": ["node_modules", "./dist", "**/*.test.ts", "./src/esm", "./src/index.ts",
+  "exclude": ["node_modules", "./lib", "**/*.test.ts", "./src/esm", "./src/index.ts",
     "src/tests"]
 }

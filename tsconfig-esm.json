@@ -1,8 +1,9 @@
 {
   "extends": ".",
   "compilerOptions": {
-    "module": "ESNext"
+    "module": "ESNext",
+    "outDir": "./esm",
   },
-  "exclude": ["node_modules", "./dist", "**/*.test.ts", "./src/cjs", "./src/index.ts",
+  "exclude": ["node_modules", "./esm", "**/*.test.ts", "./src/cjs", "./src/index.ts",
     "src/tests"]
 }
