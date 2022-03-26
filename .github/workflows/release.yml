@@ -35,17 +35,21 @@ jobs:
 
       - name: Can Publish
         run : npx can-npm-publish --verbose
+        working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Install
+        working-directory: package
         run : yarn install
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Build
         run : yarn build
+        working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish
         run : npm publish --access=public
+        working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const appstore_connect_jwt_generator_core_1 = require("appstore-connect-jwt-generator-core");
+console.log(typeof appstore_connect_jwt_generator_core_1.tokenSync);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5janMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbWFpbi5jdHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2RkFBZ0U7QUFFaEUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLCtDQUFTLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHRva2VuU3luYyB9IGZyb20gJ2FwcHN0b3JlLWNvbm5lY3Qtand0LWdlbmVyYXRvci1jb3JlJztcblxuY29uc29sZS5sb2codHlwZW9mIHRva2VuU3luYyk7Il19

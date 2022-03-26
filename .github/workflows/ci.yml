@@ -50,7 +50,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           check-latest: true
           cache: yarn
+          cache-dependency-path: package/yarn.lock
       - name: Build
+        working-directory: package
         run: yarn install && yarn lint && yarn build
 
       - name: Test
@@ -61,6 +63,7 @@ jobs:
           APPSTORE_PRIVATE_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY }}
           APPSTORE_PRIVATE_KEY_FILE_PATH: '/tmp/privateKey.p8'
           NODE_ENV: test
+        working-directory: package
         run: |
           echo ${APPSTORE_PRIVATE_KEY} | base64 -d > ${APPSTORE_PRIVATE_KEY_FILE_PATH}
           echo "" >> ${APPSTORE_PRIVATE_KEY_FILE_PATH}

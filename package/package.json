@@ -24,7 +24,7 @@
   },
   "module": "./esm/index.mjs",
   "types": "@types/index.d.ts",
-  "main": "./esm/index.cjs",
+  "main": "./lib/index.cjs",
   "scripts": {
     "prepare": "yarn build",
     "test": "jest --coverage --passWithNoTests",

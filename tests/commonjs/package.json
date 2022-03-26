@@ -1,0 +1,86 @@
+{
+  "name": "commonjs",
+  "version": "1.0.0",
+  "main": "lib/main.cjs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "package": "ncc build --source-map --license licenses.txt -m -q --target es2021",
+    "test": "jest --coverage --silent=false --verbose false",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@swc/jest": "^0.2.20",
+    "@types/jest": "^27.4.1",
+    "@vercel/ncc": "^0.33.3",
+    "jest": "^27.5.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "appstore-connect-jwt-generator-core": "*"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "extensionsToTreatAsEsm": [
+      ".ts",
+      ".cts"
+    ],
+    "moduleFileExtensions": [
+      "cts",
+      "ts",
+      "js",
+      "cjs",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "**/__tests__/*.test.ts",
+      "**/__tests__/*.test.cts"
+    ],
+    "transform": {
+      "^.+\\.c?(t|j)sx?$": [
+        "@swc/jest",
+        {
+          "jsc": {
+            "parser": {
+              "syntax": "typescript",
+              "tsx": false,
+              "decorators": true,
+              "dynamicImport": true
+            },
+            "minify": {
+              "compress": {
+                "unused": true
+              },
+              "mangle": true
+            },
+            "target": "es2021",
+            "transform": {
+              "optimizer": {
+                "jsonify": {
+                  "minCost": 0
+                }
+              }
+            }
+          },
+          "minify": true,
+          "sourceMaps": true,
+          "module": {
+            "type": "commonjs",
+            "strict": true,
+            "strictMode": true,
+            "lazy": true,
+            "noInterop": false
+          }
+        }
+      ]
+    },
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/dist",
+      "<rootDir>/node_modules"
+    ],
+    "verbose": true
+  }
+}
