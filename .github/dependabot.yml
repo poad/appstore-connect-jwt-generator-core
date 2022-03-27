@@ -4,6 +4,7 @@ updates:
     directory: /
     schedule:
       interval: daily
+      timezone: Asia/Tokyo
     allow:
       - dependency-type: all
     rebase-strategy: auto
@@ -11,7 +12,29 @@ updates:
       - poad
 
   - package-ecosystem: npm
-    directory: '/'
+    directory: '/package/'
+    schedule:
+      interval: daily
+      timezone: Asia/Tokyo
+    allow:
+      - dependency-type: all
+    rebase-strategy: auto
+    assignees:
+      - poad
+
+  - package-ecosystem: npm
+    directory: '/tests/commonjs'
+    schedule:
+      interval: daily
+      timezone: Asia/Tokyo
+    allow:
+      - dependency-type: all
+    rebase-strategy: auto
+    assignees:
+      - poad
+
+  - package-ecosystem: npm
+    directory: '/tests/esm/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
