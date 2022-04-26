@@ -5,7 +5,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   testMatch: ['**/tests/*.test.ts'],
   transform: {
-    '^.+\\.(t|j)sx?$': 'ts-jest/legacy'
+    '^.+\\.(t|j)sx?$': 'ts-jest'
   },
   modulePaths: [
     "<rootDir>/dist",
