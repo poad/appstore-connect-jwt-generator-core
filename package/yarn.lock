@@ -539,7 +539,7 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@jest/types@^28.0.0":
+"@jest/types@^28.0.0", "@jest/types@^28.0.0-alpha.9":
   version "28.0.0"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-28.0.0.tgz#1818a07d26b204c1c34a5b22474d0a32f4b02a8d"
   integrity sha512-4rxVTiBbSjsl8V9sXkspfxW+t2Tdcmmc3fX7AU49gVrRpjXMjEDurSx/iruXnOSor4PTL0fwO61/2+n1XQ/RgA==
@@ -2189,12 +2189,12 @@ jest-snapshot@^28.0.0:
     pretty-format "^28.0.0"
     semver "^7.3.5"
 
-jest-util@^27.0.0:
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-27.5.1.tgz#3ba9771e8e31a0b85da48fe0b0891fb86c01c2f9"
-  integrity sha512-Kv2o/8jNvX1MQ0KGtw480E/w4fBCDOnH6+6DmeKi6LZUIlKA5kwY0YNdlzaWTiVgxqAqik11QyxDOKk543aKXw==
+jest-util@28.0.0-alpha.9:
+  version "28.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-28.0.0-alpha.9.tgz#dec3db52a4af5a70a8769f7b794cc84263ea0aa4"
+  integrity sha512-SPSa3TSlj4T1Z9qQCW40K9UfCDgVy6itl513gIIDK8+p6wArccjiTQvCwA4s7a8cS54841w2GEwC+yH6zaIbqQ==
   dependencies:
-    "@jest/types" "^27.5.1"
+    "@jest/types" "^28.0.0-alpha.9"
     "@types/node" "*"
     chalk "^4.0.0"
     ci-info "^3.2.0"
@@ -2981,19 +2981,19 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-ts-jest@^27.1.4:
-  version "27.1.4"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-27.1.4.tgz#84d42cf0f4e7157a52e7c64b1492c46330943e00"
-  integrity sha512-qjkZlVPWVctAezwsOD1OPzbZ+k7zA5z3oxII4dGdZo5ggX/PL7kvwTM0pXTr10fAtbiVpJaL3bWd502zAhpgSQ==
+ts-jest@^28.0.0-next.0:
+  version "28.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-28.0.0-next.0.tgz#a36f7ef369a726718a184fd8c14982561ffab4c9"
+  integrity sha512-S6nas/bGZIBUjn+uFQK8BM/n9Ceoh9JK9aqXD1iQ9NGcnEVE0VuAMLWHR65+uwyQs4Ac/PwhY42VEmcIocl6RQ==
   dependencies:
     bs-logger "0.x"
     fast-json-stable-stringify "2.x"
-    jest-util "^27.0.0"
+    jest-util "28.0.0-alpha.9"
     json5 "2.x"
     lodash.memoize "4.x"
     make-error "1.x"
     semver "7.x"
-    yargs-parser "20.x"
+    yargs-parser "^20.x"
 
 ts-node@^10.7.0:
   version "10.7.0"
@@ -3135,7 +3135,7 @@ yallist@^4.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
-yargs-parser@20.x:
+yargs-parser@^20.x:
   version "20.2.9"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
