@@ -1611,11 +1611,11 @@ jest-message-util@^28.0.1:
     stack-utils "^2.0.3"
 
 jest-mock@^28.0.1:
-  version "28.0.1"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-28.0.1.tgz#74d1e303e0825a83c54dceaf0f5095100667eeaa"
-  integrity sha512-pEi1eywUvu7Ko8T5QX6l4X4694cd9NqzyeFFnH7QYDEm4INKxNbgBKLnaNmp025SlH9WHHDkHTeY4zRHPicMHw==
+  version "28.0.2"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-28.0.2.tgz#059b500b34c1dd76474ebcdeccc249fe4dd0249f"
+  integrity sha512-vfnJ4zXRB0i24jOTGtQJyl26JKsgBKtqRlCnsrORZbG06FToSSn33h2x/bmE8XxqxkLWdZBRo+/65l8Vi3nD+g==
   dependencies:
-    "@jest/types" "^28.0.1"
+    "@jest/types" "^28.0.2"
     "@types/node" "*"
 
 jest-pnp-resolver@^1.2.2:
