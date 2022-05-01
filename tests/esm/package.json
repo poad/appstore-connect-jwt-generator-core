@@ -12,11 +12,11 @@
   "type": "module",
   "devDependencies": {
     "@swc/core": "*",
-    "@swc/jest": "*",
     "@types/jest": "*",
     "@types/node": "*",
     "@vercel/ncc": "*",
     "jest": "*",
+    "ts-jest": "^28.0.0-next.3",
     "typescript": "*"
   },
   "dependencies": {
@@ -43,7 +43,7 @@
     ],
     "transform": {
       "^.+\\.m?(t|j)sx?$": [
-        "@swc/jest",
+        "ts-jest/legacy",
         {
           "jsc": {
             "parser": {
