@@ -43,40 +43,7 @@
     ],
     "transform": {
       "^.+\\.m?(t|j)sx?$": [
-        "ts-jest/legacy",
-        {
-          "jsc": {
-            "parser": {
-              "syntax": "typescript",
-              "tsx": false,
-              "decorators": true,
-              "dynamicImport": true
-            },
-            "minify": {
-              "compress": {
-                "unused": true
-              },
-              "mangle": true
-            },
-            "target": "es2021",
-            "transform": {
-              "optimizer": {
-                "jsonify": {
-                  "minCost": 0
-                }
-              }
-            }
-          },
-          "minify": true,
-          "sourceMaps": true,
-          "module": {
-            "type": "es6",
-            "strict": true,
-            "strictMode": true,
-            "lazy": true,
-            "noInterop": false
-          }
-        }
+        "ts-jest/legacy"
       ]
     },
     "modulePaths": [
