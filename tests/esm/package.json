@@ -7,16 +7,18 @@
   "scripts": {
     "package": "ncc build --source-map --license licenses.txt -m -q --target es2021",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --silent=false --verbose false",
+    "pretest": "yarn build",
     "build": "tsc"
   },
   "type": "module",
   "devDependencies": {
     "@swc/core": "*",
+    "@swc/jest": "*",
     "@types/jest": "*",
     "@types/node": "*",
     "@vercel/ncc": "*",
     "jest": "^27",
-    "ts-jest": "^27",
+    "source-map-support": "*",
     "typescript": "*"
   },
   "dependencies": {
@@ -27,13 +29,16 @@
     "clearMocks": true,
     "extensionsToTreatAsEsm": [
       ".ts",
-      ".cts"
+      ".cts",
+      ".mts"
     ],
     "moduleFileExtensions": [
       "cts",
       "ts",
+      "mts",
       "js",
       "cjs",
+      "mjs",
       "json",
       "node"
     ],
@@ -44,7 +49,40 @@
     ],
     "transform": {
       "^.+\\.m?(t|j)sx?$": [
-        "ts-jest"
+        "@swc/jest",
+        {
+          "jsc": {
+            "parser": {
+              "syntax": "typescript",
+              "tsx": false,
+              "decorators": true,
+              "dynamicImport": true
+            },
+            "minify": {
+              "compress": {
+                "unused": true
+              },
+              "mangle": true
+            },
+            "target": "es2021",
+            "transform": {
+              "optimizer": {
+                "jsonify": {
+                  "minCost": 0
+                }
+              }
+            }
+          },
+          "minify": true,
+          "sourceMaps": true,
+          "module": {
+            "type": "es6",
+            "strict": true,
+            "strictMode": true,
+            "lazy": true,
+            "noInterop": false
+          }
+        }
       ]
     },
     "modulePaths": [

@@ -1,6 +1,7 @@
 import { tokenSync } from 'appstore-connect-jwt-generator-core';
+import 'source-map-support/register';
 
-export const main = {
+const main = {
     main: () => {
         console.log(typeof tokenSync);
     }

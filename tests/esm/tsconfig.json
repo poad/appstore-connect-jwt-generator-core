@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2021",
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "rootDirs": ["./src"],
+    "declaration": true,
+    "declarationMap": false,
     "sourceMap": false,
     "outDir": "./esm",
     "inlineSourceMap": true,

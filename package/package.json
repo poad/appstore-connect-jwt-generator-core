@@ -26,7 +26,6 @@
   "types": "@types/index.d.ts",
   "main": "./lib/index.cjs",
   "scripts": {
-    "prepare": "yarn build",
     "clean": "rimraf dist",
     "cjs": "tsc -p tsconfig-cjs.json",
     "esm": "tsc -p tsconfig-esm.json",
