@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.30",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.21.0",
     "chokidar": "^3.5.3",
     "enhanced-resolve": "^5.9.3",
