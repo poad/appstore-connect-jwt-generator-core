@@ -16,7 +16,7 @@
     "@types/node": "*",
     "@vercel/ncc": "*",
     "jest": "*",
-    "ts-jest": "^28.0.1",
+    "ts-jest": "*",
     "typescript": "*"
   },
   "dependencies": {

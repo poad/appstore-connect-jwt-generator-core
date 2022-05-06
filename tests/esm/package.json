@@ -17,7 +17,7 @@
     "@types/jest": "*",
     "@types/node": "*",
     "@vercel/ncc": "*",
-    "jest": "^27",
+    "jest": "*",
     "source-map-support": "*",
     "typescript": "*"
   },
