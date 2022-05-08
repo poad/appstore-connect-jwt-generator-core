@@ -46,7 +46,4 @@ jobs:
       - name: Build
         working-directory: package
         run: yarn install && yarn lint && yarn build
-      - name: Test
-        working-directory: package
-        run: ${{ secrets.APPSTORE_PRIVATE_KEY }} > ./privateKey.p8 && yarn test
 
