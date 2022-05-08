@@ -45,5 +45,5 @@ jobs:
           cache-dependency-path: package/yarn.lock
       - name: Build
         working-directory: package
-        run: yarn install && yarn lint && yarn build
+        run: yarn install && yarn lint && yarn build && yarn test
 
