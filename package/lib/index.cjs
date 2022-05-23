@@ -17,8 +17,7 @@ const signOption = (issuerId, privateKeyId, duration)=>({
         audience: 'appstoreconnect-v1',
         expiresIn: duration,
         issuer: issuerId
-    })
-;
+    });
 function jwtGenCore() {}
 function tokenSync(privateKey, issuerId, privateKeyId, duration = 500) {
     return _jsonwebtoken.default.sign(JSON.parse("{}"), privateKey, signOption(issuerId, privateKeyId, duration));
