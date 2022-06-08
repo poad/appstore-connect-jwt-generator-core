@@ -502,22 +502,22 @@
     jest-haste-map "^28.1.0"
     slash "^3.0.0"
 
-"@jest/transform@^28.1.0":
-  version "28.1.0"
-  resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-28.1.0.tgz#224a3c9ba4cc98e2ff996c0a89a2d59db15c74ce"
-  integrity sha512-omy2xe5WxlAfqmsTjTPxw+iXRTRnf+NtX0ToG+4S0tABeb4KsKmPUHq5UBuwunHg3tJRwgEQhEp0M/8oiatLEA==
+"@jest/transform@^28.1.0", "@jest/transform@^28.1.1":
+  version "28.1.1"
+  resolved "https://registry.yarnpkg.com/@jest/transform/-/transform-28.1.1.tgz#83541f2a3f612077c8501f49cc4e205d4e4a6b27"
+  integrity sha512-PkfaTUuvjUarl1EDr5ZQcCA++oXkFCP9QFUkG0yVKVmNObjhrqDy0kbMpMebfHWm3CCDHjYNem9eUSH8suVNHQ==
   dependencies:
     "@babel/core" "^7.11.6"
-    "@jest/types" "^28.1.0"
+    "@jest/types" "^28.1.1"
     "@jridgewell/trace-mapping" "^0.3.7"
     babel-plugin-istanbul "^6.1.1"
     chalk "^4.0.0"
     convert-source-map "^1.4.0"
     fast-json-stable-stringify "^2.0.0"
     graceful-fs "^4.2.9"
-    jest-haste-map "^28.1.0"
+    jest-haste-map "^28.1.1"
     jest-regex-util "^28.0.2"
-    jest-util "^28.1.0"
+    jest-util "^28.1.1"
     micromatch "^4.0.4"
     pirates "^4.0.4"
     slash "^3.0.0"
@@ -1027,14 +1027,14 @@ array-union@^2.1.0:
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
 babel-jest@^28.1.0:
-  version "28.1.0"
-  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-28.1.0.tgz#95a67f8e2e7c0042e7b3ad3951b8af41a533b5ea"
-  integrity sha512-zNKk0yhDZ6QUwfxh9k07GII6siNGMJWVUU49gmFj5gfdqDKLqa2RArXOF2CODp4Dr7dLxN2cvAV+667dGJ4b4w==
+  version "28.1.1"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-28.1.1.tgz#2a3a4ae50964695b2d694ccffe4bec537c5a3586"
+  integrity sha512-MEt0263viUdAkTq5D7upHPNxvt4n9uLUGa6pPz3WviNBMtOmStb1lIXS3QobnoqM+qnH+vr4EKlvhe8QcmxIYw==
   dependencies:
-    "@jest/transform" "^28.1.0"
+    "@jest/transform" "^28.1.1"
     "@types/babel__core" "^7.1.14"
     babel-plugin-istanbul "^6.1.1"
-    babel-preset-jest "^28.0.2"
+    babel-preset-jest "^28.1.1"
     chalk "^4.0.0"
     graceful-fs "^4.2.9"
     slash "^3.0.0"
@@ -1050,10 +1050,10 @@ babel-plugin-istanbul@^6.1.1:
     istanbul-lib-instrument "^5.0.4"
     test-exclude "^6.0.0"
 
-babel-plugin-jest-hoist@^28.0.2:
-  version "28.0.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-28.0.2.tgz#9307d03a633be6fc4b1a6bc5c3a87e22bd01dd3b"
-  integrity sha512-Kizhn/ZL+68ZQHxSnHyuvJv8IchXD62KQxV77TBDV/xoBFBOfgRAk97GNs6hXdTTCiVES9nB2I6+7MXXrk5llQ==
+babel-plugin-jest-hoist@^28.1.1:
+  version "28.1.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-28.1.1.tgz#5e055cdcc47894f28341f87f5e35aad2df680b11"
+  integrity sha512-NovGCy5Hn25uMJSAU8FaHqzs13cFoOI4lhIujiepssjCKRsAo3TA734RDWSGxuFTsUJXerYOqQQodlxgmtqbzw==
   dependencies:
     "@babel/template" "^7.3.3"
     "@babel/types" "^7.3.3"
@@ -1078,12 +1078,12 @@ babel-preset-current-node-syntax@^1.0.0:
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
     "@babel/plugin-syntax-top-level-await" "^7.8.3"
 
-babel-preset-jest@^28.0.2:
-  version "28.0.2"
-  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-28.0.2.tgz#d8210fe4e46c1017e9fa13d7794b166e93aa9f89"
-  integrity sha512-sYzXIdgIXXroJTFeB3S6sNDWtlJ2dllCdTEsnZ65ACrMojj3hVNFRmnJ1HZtomGi+Be7aqpY/HJ92fr8OhKVkQ==
+babel-preset-jest@^28.1.1:
+  version "28.1.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-28.1.1.tgz#5b6e5e69f963eb2d70f739c607b8f723c0ee75e4"
+  integrity sha512-FCq9Oud0ReTeWtcneYf/48981aTfXYuB9gbU4rBNNJVBSQ6ssv7E6v/qvbBxtOWwZFXjLZwpg+W3q7J6vhH25g==
   dependencies:
-    babel-plugin-jest-hoist "^28.0.2"
+    babel-plugin-jest-hoist "^28.1.1"
     babel-preset-current-node-syntax "^1.0.0"
 
 balanced-match@^1.0.0:
@@ -2008,7 +2008,7 @@ jest-get-type@^28.0.2:
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-28.0.2.tgz#34622e628e4fdcd793d46db8a242227901fcf203"
   integrity sha512-ioj2w9/DxSYHfOm5lJKCdcAmPJzQXmbM/Url3rhlghrPvT3tt+7a/+oXc9azkKmLvoiXjtV83bEWqi+vs5nlPA==
 
-jest-haste-map@^28.1.0:
+jest-haste-map@^28.1.0, jest-haste-map@^28.1.1:
   version "28.1.1"
   resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-28.1.1.tgz#471685f1acd365a9394745bb97c8fc16289adca3"
   integrity sha512-ZrRSE2o3Ezh7sb1KmeLEZRZ4mgufbrMwolcFHNRSjKZhpLa8TdooXOOFlSwoUzlbVs1t0l7upVRW2K7RWGHzbQ==
