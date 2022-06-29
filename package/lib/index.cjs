@@ -2,10 +2,18 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.tokenSync = tokenSync;
-exports.token = token;
-exports.default = void 0;
-var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        get: all[name],
+        enumerable: true
+    });
+}
+_export(exports, {
+    default: ()=>_default,
+    token: ()=>token,
+    tokenSync: ()=>tokenSync
+});
+const _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -29,7 +37,6 @@ jwtGenCore.tokenSync = tokenSync;
 jwtGenCore.token = token;
 module.exports = exports = jwtGenCore;
 var _default = jwtGenCore;
-exports.default = _default;
 
 
 //# sourceMappingURL=index.cjs.map
