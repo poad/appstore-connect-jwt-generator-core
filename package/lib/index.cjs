@@ -10,10 +10,10 @@ function _export(target, all) {
 }
 _export(exports, {
     default: ()=>_default,
-    token: ()=>token,
-    tokenSync: ()=>tokenSync
+    tokenSync: ()=>tokenSync,
+    token: ()=>token
 });
-const _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
+const _jsonwebtoken = /*#__PURE__*/ _interopRequireDefault(require("jsonwebtoken"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj

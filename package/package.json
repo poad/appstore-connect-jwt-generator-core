@@ -31,6 +31,7 @@
     "esm": "swc --config-file .swcrc-esm --delete-dir-on-start --extensions .mts src/esm -o esm/index.mjs",
     "types": "tsc -p tsconfig-types.json",
     "build": "yarn clean && yarn cjs && yarn esm && yarn types",
+    "package": "echo Skip the packaging process",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src/esm/**/*.mts src/esm/*.mts src/cjs/**/*.cts src/cjs/*.cts src/*.ts",
     "test": "jest --coverage --passWithNoTests"
@@ -39,16 +40,16 @@
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.210",
     "@swc/jest": "^0.2.21",
-    "@types/node": "^18.0.2",
+    "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "chokidar": "^3.5.3",
     "enhanced-resolve": "^5.10.0",
-    "eslint": "^8.18.0",
-    "jest": "^28.1.1",
+    "eslint": "^8.19.0",
+    "jest": "^28.1.2",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.8.1",
+    "ts-node": "^10.8.2",
     "typescript": "^4.7.4"
   },
   "dependencies": {
