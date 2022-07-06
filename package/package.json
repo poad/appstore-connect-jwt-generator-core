@@ -39,7 +39,7 @@
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.210",
     "@swc/jest": "^0.2.21",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.0.2",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "chokidar": "^3.5.3",
