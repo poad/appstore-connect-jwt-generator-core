@@ -818,7 +818,7 @@ appstore-connect-jwt-generator-core@../../package/:
   dependencies:
     "@types/jsonwebtoken" "^8.5.8"
     jsonwebtoken "^8.5.1"
-    log4js "^6.5.2"
+    log4js "^6.6.0"
     regenerator-runtime "^0.13.9"
 
 argparse@^1.0.7:
@@ -1878,7 +1878,7 @@ lodash.once@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==
 
-log4js@^6.5.2:
+log4js@^6.6.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.6.0.tgz#e8fd00143d1e0ecf1d10959bb69b90b1b30137f3"
   integrity sha512-3v8R7fd45UB6THucSht6wN2/7AZEruQbXdjygPZcxt5TA/msO6si9CN5MefUuKXbYnJHTBnYcx4famwcyQd+sA==
