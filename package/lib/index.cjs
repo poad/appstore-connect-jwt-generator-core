@@ -9,9 +9,9 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    default: ()=>_default,
     tokenSync: ()=>tokenSync,
-    token: ()=>token
+    token: ()=>token,
+    default: ()=>_default
 });
 const _jsonwebtoken = /*#__PURE__*/ _interopRequireDefault(require("jsonwebtoken"));
 function _interopRequireDefault(obj) {
@@ -36,7 +36,7 @@ async function token(privateKey, issuerId, privateKeyId, duration = 500) {
 jwtGenCore.tokenSync = tokenSync;
 jwtGenCore.token = token;
 module.exports = exports = jwtGenCore;
-var _default = jwtGenCore;
+const _default = jwtGenCore;
 
 
 //# sourceMappingURL=index.cjs.map
