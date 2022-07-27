@@ -55,7 +55,7 @@
   "dependencies": {
     "@types/jsonwebtoken": "^8.5.8",
     "jsonwebtoken": "^8.5.1",
-    "log4js": "^6.6.0",
+    "log4js": "^6.6.1",
     "regenerator-runtime": "^0.13.9"
   },
   "engines": {
