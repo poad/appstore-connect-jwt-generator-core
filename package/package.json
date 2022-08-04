@@ -38,11 +38,11 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
-    "@swc/core": "^1.2.222",
-    "@swc/jest": "^0.2.21",
+    "@swc/core": "^1.2.223",
+    "@swc/jest": "^0.2.22",
     "@types/node": "^18.6.3",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.31.0",
+    "@typescript-eslint/parser": "^5.32.0",
     "chokidar": "^3.5.3",
     "enhanced-resolve": "^5.10.0",
     "eslint": "^8.21.0",
@@ -57,6 +57,10 @@
     "jsonwebtoken": "^8.5.1",
     "log4js": "^6.6.1",
     "regenerator-runtime": "^0.13.9"
+  },
+  "resolutions": {
+    "@types/yargs-parser": "^13",
+    "yargs-parser": "^13"
   },
   "engines": {
     "node": ">=14.13.1 || >=16.0.0"
