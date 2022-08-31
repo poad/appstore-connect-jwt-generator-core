@@ -41,7 +41,7 @@
     "@swc/core": "^1.2.241",
     "@swc/jest": "^0.2.22",
     "@types/node": "^18.7.11",
-    "@typescript-eslint/eslint-plugin": "^5.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.0",
     "chokidar": "^3.5.3",
     "enhanced-resolve": "^5.10.0",
