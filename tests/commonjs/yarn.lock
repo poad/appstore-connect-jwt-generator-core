@@ -1601,22 +1601,7 @@ jest-matcher-utils@^29.0.2, jest-matcher-utils@^29.0.3:
     jest-get-type "^29.0.0"
     pretty-format "^29.0.3"
 
-jest-message-util@^29.0.2:
-  version "29.0.2"
-  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-29.0.2.tgz#b2781dfb6a2d1c63830d9684c5148ae3155c6154"
-  integrity sha512-kcJAgms3ckJV0wUoLsAM40xAhY+pb9FVSZwicjFU9PFkaTNmqh9xd99/CzKse48wPM1ANUQKmp03/DpkY+lGrA==
-  dependencies:
-    "@babel/code-frame" "^7.12.13"
-    "@jest/types" "^29.0.2"
-    "@types/stack-utils" "^2.0.0"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.9"
-    micromatch "^4.0.4"
-    pretty-format "^29.0.2"
-    slash "^3.0.0"
-    stack-utils "^2.0.3"
-
-jest-message-util@^29.0.3:
+jest-message-util@^29.0.2, jest-message-util@^29.0.3:
   version "29.0.3"
   resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-29.0.3.tgz#f0254e1ffad21890c78355726202cc91d0a40ea8"
   integrity sha512-7T8JiUTtDfppojosORAflABfLsLKMLkBHSWkjNQrjIltGoDzNGn7wEPOSfjqYAGTYME65esQzMJxGDjuLBKdOg==
@@ -2147,7 +2132,7 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pretty-format@^29.0.0, pretty-format@^29.0.2, pretty-format@^29.0.3:
+pretty-format@^29.0.0, pretty-format@^29.0.3:
   version "29.0.3"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.0.3.tgz#23d5f8cabc9cbf209a77d49409d093d61166a811"
   integrity sha512-cHudsvQr1K5vNVLbvYF/nv3Qy/F/BcEKxGuIeMiVMRHxPOO1RxXooP8g/ZrwAp7Dx+KdMZoOc7NxLHhMrP2f9Q==
