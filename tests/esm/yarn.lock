@@ -565,9 +565,9 @@
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@sinclair/typebox@^0.24.1":
-  version "0.24.40"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.40.tgz#00ee9b48537b147f6ffc80ebc28ab16d6016ed5c"
-  integrity sha512-Xint60L8rF0+nRy+6fCjW9jQMmu7fTpbwTBrXZiK6eq/RHDJS7LvWX/0oXC8O7fCePmrY/XdfaTv2HiUDeCq4g==
+  version "0.24.41"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.41.tgz#45470b8bae32a28f1e0501066d0bacbd8b772804"
+  integrity sha512-TJCgQurls4FipFvHeC+gfAzb+GGstL0TDwYJKQVtTeSvJIznWzP7g3bAd5gEBlr8+bIxqnWS9VGVWREDhmE8jA==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -756,9 +756,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@*":
-  version "29.0.1"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.0.1.tgz#b5610ae1a1c5f6e0f6beb132941722da7c493c28"
-  integrity sha512-CAZrjLRZs4xEdIrfrdV74xK1Vo/BKQZwUcjJv3gp6gMeV3BsVxMnXTcgtYOKyphT4DPPo7jxVEVhuwJTQn3oPQ==
+  version "29.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.0.2.tgz#05dcb2d78d2fcc444be89f95b7389f2c3601d336"
+  integrity sha512-TaklkwSEtvwJpleiKBHgEBySIQlcZ08gYP/s5wdtdLnjz9uxjnDd7U+Y0JWACebkqBc+jtbol2PEtEW0wQV2zQ==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -771,9 +771,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "18.7.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.17.tgz#52438111ea98f77475470fc62d79b9eb96bb2c92"
-  integrity sha512-0UyfUnt02zIuqp7yC8RYtDkp/vo8bFaQ13KkSEvUAohPOAlnVNbj5Fi3fgPSuwzakS+EvvnnZ4x9y7i6ASaSPQ==
+  version "18.7.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.18.tgz#633184f55c322e4fb08612307c274ee6d5ed3154"
+  integrity sha512-m+6nTEOadJZuTPkKR/SYK3A2d7FZrgElol9UP1Kae90VVU4a6mxnPuLiIW1m4Cq4gZ/nWb9GrdVXJCoCazDAbg==
 
 "@types/prettier@^2.1.5":
   version "2.7.0"
@@ -2385,9 +2385,9 @@ universalify@^0.1.0:
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 update-browserslist-db@^1.0.5:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.8.tgz#2f0b711327668eee01bbecddcf4a7c7954a7f8e2"
-  integrity sha512-GHg7C4M7oJSJYW/ED/5QOJ7nL/E0lwTOBGsOorA7jqHr8ExUhPfwAotIAmdSw/LWv3SMLSNpzTAgeLG9zaZKTA==
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.9.tgz#2924d3927367a38d5c555413a7ce138fc95fcb18"
+  integrity sha512-/xsqn21EGVdXI3EXSum1Yckj3ZVZugqyOZQ/CxYPBD/R+ko9NSUScf8tFF4dOKY+2pvSSJA/S+5B8s4Zr4kyvg==
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
