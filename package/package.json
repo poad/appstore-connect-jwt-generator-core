@@ -45,7 +45,7 @@
     "@typescript-eslint/parser": "^5.38.1",
     "chokidar": "^3.5.3",
     "enhanced-resolve": "^5.10.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "jest": "^29.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
