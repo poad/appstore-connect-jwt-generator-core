@@ -1580,13 +1580,13 @@ jest-message-util@^29.1.0:
     stack-utils "^2.0.3"
 
 jest-mock@^29.1.1:
-  version "29.1.1"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.1.1.tgz#b5475d07a8db6d39fe73e960ca94a3ac761afe0d"
-  integrity sha512-vDe56JmImqt3j8pHcEIkahQbSCnBS49wda0spIl0bkrIM7VDZXjKaes6W28vKZye0atNAcFaj3dxXh0XWjBW4Q==
+  version "29.1.2"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.1.2.tgz#de47807edbb9d4abf8423f1d8d308d670105678c"
+  integrity sha512-PFDAdjjWbjPUtQPkQufvniXIS3N9Tv7tbibePEjIIprzjgo0qQlyUiVMrT4vL8FaSJo1QXifQUOuPH3HQC/aMA==
   dependencies:
-    "@jest/types" "^29.1.0"
+    "@jest/types" "^29.1.2"
     "@types/node" "*"
-    jest-util "^29.1.0"
+    jest-util "^29.1.2"
 
 jest-pnp-resolver@^1.2.2:
   version "1.2.2"
