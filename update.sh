@@ -36,7 +36,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-yarn install && yarn upgrade && rm -rf dist && yarn build && rm -rf node_modules && yarn install --production && git add node_modules dist -f
+yarn install && yarn upgrade && rm -rf dist && yarn build && yarn package && rm -rf node_modules && yarn install --production && git add node_modules dist -f
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
@@ -51,7 +51,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-yarn install && yarn upgrade && rm -rf dist && yarn build && rm -rf node_modules && yarn install --production && git add node_modules dist -f
+yarn install && yarn upgrade && rm -rf dist && yarn build && yarn package && rm -rf node_modules && yarn install --production && git add node_modules dist -f
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
