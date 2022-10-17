@@ -822,7 +822,7 @@ appstore-connect-jwt-generator-core@../../package/:
     "@types/jsonwebtoken" "^8.5.9"
     jsonwebtoken "^8.5.1"
     log4js "^6.6.1"
-    regenerator-runtime "^0.13.9"
+    regenerator-runtime "^0.13.10"
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -1592,9 +1592,9 @@ jest-pnp-resolver@^1.2.2:
   integrity sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TCARAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w==
 
 jest-regex-util@^29.0.0:
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-29.0.0.tgz#b442987f688289df8eb6c16fa8df488b4cd007de"
-  integrity sha512-BV7VW7Sy0fInHWN93MMPtlClweYv2qrSCwfeFWmpribGZtQPWNvRSq9XOVgOEjU1iBGRKXUZil0o2AH7Iy9Lug==
+  version "29.2.0"
+  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-29.2.0.tgz#82ef3b587e8c303357728d0322d48bbfd2971f7b"
+  integrity sha512-6yXn0kg2JXzH30cr2NlThF+70iuO/3irbaB4mh5WyqNIvLLP+B6sFdluO1/1RJmslyh/f9osnefECflHvTbwVA==
 
 jest-resolve-dependencies@^29.1.2:
   version "29.1.2"
@@ -2105,7 +2105,7 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-regenerator-runtime@^0.13.9:
+regenerator-runtime@^0.13.10:
   version "0.13.10"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
   integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
