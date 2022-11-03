@@ -22,6 +22,9 @@
   "dependencies": {
     "appstore-connect-jwt-generator-core": "../../package/"
   },
+  "resolutions": {
+    "@swc/core": "1.3.11"
+  },
   "jest": {
     "testEnvironment": "node",
     "clearMocks": true,
