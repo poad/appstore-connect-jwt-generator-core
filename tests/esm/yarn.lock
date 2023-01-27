@@ -1803,11 +1803,11 @@ jest-snapshot@^29.4.0:
     semver "^7.3.5"
 
 jest-util@^29.4.0:
-  version "29.4.0"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.4.0.tgz#1f3743c3dda843049623501c7e6f8fa5efdc2c2f"
-  integrity sha512-lCCwlze7UEV8TpR9ArS8w0cTbcMry5tlBkg7QSc5og5kNyV59dnY2aKHu5fY2k5aDJMQpCUGpvL2w6ZU44lveA==
+  version "29.4.1"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.4.1.tgz#2eeed98ff4563b441b5a656ed1a786e3abc3e4c4"
+  integrity sha512-bQy9FPGxVutgpN4VRc0hk6w7Hx/m6L53QxpDreTZgJd9gfx/AV2MjyPde9tGyZRINAUrSv57p2inGBu2dRLmkQ==
   dependencies:
-    "@jest/types" "^29.4.0"
+    "@jest/types" "^29.4.1"
     "@types/node" "*"
     chalk "^4.0.0"
     ci-info "^3.2.0"
