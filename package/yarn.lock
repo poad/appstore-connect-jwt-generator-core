@@ -2243,9 +2243,9 @@ jest-diff@^29.4.2:
     pretty-format "^29.4.2"
 
 jest-docblock@^29.2.0:
-  version "29.2.0"
-  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-29.2.0.tgz#307203e20b637d97cee04809efc1d43afc641e82"
-  integrity sha512-bkxUsxTgWQGbXV5IENmfiIuqZhJcyvF7tU4zJ/7ioTutdz4ToB5Yx6JOFBpgI+TphRY4lhOyCWGNH/QFQh5T6A==
+  version "29.4.2"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-29.4.2.tgz#c78a95eedf9a24c0a6cc16cf2abdc4b8b0f2531b"
+  integrity sha512-dV2JdahgClL34Y5vLrAHde3nF3yo2jKRH+GIYJuCpfqwEJZcikzeafVTGAjbOfKPG17ez9iWXwUYp7yefeCRag==
   dependencies:
     detect-newline "^3.0.0"
 
