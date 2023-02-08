@@ -1819,17 +1819,7 @@ jest-watcher@^29.4.1:
     jest-util "^29.4.1"
     string-length "^4.0.1"
 
-jest-worker@^29.4.1:
-  version "29.4.1"
-  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-29.4.1.tgz#7cb4a99a38975679600305650f86f4807460aab1"
-  integrity sha512-O9doU/S1EBe+yp/mstQ0VpPwpv0Clgn68TkNwGxL6/usX/KUW9Arnn4ag8C3jc6qHcXznhsT5Na1liYzAsuAbQ==
-  dependencies:
-    "@types/node" "*"
-    jest-util "^29.4.1"
-    merge-stream "^2.0.0"
-    supports-color "^8.0.0"
-
-jest-worker@^29.4.2:
+jest-worker@^29.4.1, jest-worker@^29.4.2:
   version "29.4.2"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-29.4.2.tgz#d9b2c3bafc69311d84d94e7fb45677fc8976296f"
   integrity sha512-VIuZA2hZmFyRbchsUCHEehoSf2HEl0YVF8SDJqtPnKorAaBuh42V8QsLnde0XP5F6TyCynGPEGgBOn3Fc+wZGw==
