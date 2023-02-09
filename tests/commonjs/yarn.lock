@@ -1709,16 +1709,7 @@ jest-message-util@^29.4.1, jest-message-util@^29.4.2:
     slash "^3.0.0"
     stack-utils "^2.0.3"
 
-jest-mock@^29.4.1:
-  version "29.4.1"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.4.1.tgz#a218a2abf45c99c501d4665207748a6b9e29afbd"
-  integrity sha512-MwA4hQ7zBOcgVCVnsM8TzaFLVUD/pFWTfbkY953Y81L5ret3GFRZtmPmRFAjKQSdCKoJvvqOu6Bvfpqlwwb0dQ==
-  dependencies:
-    "@jest/types" "^29.4.1"
-    "@types/node" "*"
-    jest-util "^29.4.1"
-
-jest-mock@^29.4.2:
+jest-mock@^29.4.1, jest-mock@^29.4.2:
   version "29.4.2"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.4.2.tgz#e1054be66fb3e975d26d4528fcde6979e4759de8"
   integrity sha512-x1FSd4Gvx2yIahdaIKoBjwji6XpboDunSJ95RpntGrYulI1ByuYQCKN/P7hvk09JB74IonU3IPLdkutEWYt++g==
