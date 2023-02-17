@@ -377,13 +377,6 @@
     "@types/node" "*"
     jest-mock "^29.4.3"
 
-"@jest/expect-utils@^29.4.2":
-  version "29.4.2"
-  resolved "https://registry.yarnpkg.com/@jest/expect-utils/-/expect-utils-29.4.2.tgz#cd0065dfdd8e8a182aa350cc121db97b5eed7b3f"
-  integrity sha512-Dd3ilDJpBnqa0GiPN7QrudVs0cczMMHtehSo2CSTjm3zdHx0RcpmhFNVEltuEFeqfLIyWKFI224FsMSQ/nsJQA==
-  dependencies:
-    jest-get-type "^29.4.2"
-
 "@jest/expect-utils@^29.4.3":
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/@jest/expect-utils/-/expect-utils-29.4.3.tgz#95ce4df62952f071bcd618225ac7c47eaa81431e"
@@ -572,9 +565,9 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@sinclair/typebox@^0.25.16":
-  version "0.25.22"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.22.tgz#2808d895e9c2722b20a622a9c8cb332f6720eb4a"
-  integrity sha512-6U6r2L7rnM7EG8G1tWzIjdB3QlsHF4slgcqXNN/SF0xJOAr0nDmT2GedlkyO3mrv8mDTJ24UuOMWR3diBrCvQQ==
+  version "0.25.23"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.23.tgz#1c15b0d2b872d89cc0f47c7243eacb447df8b8bd"
+  integrity sha512-VEB8ygeP42CFLWyAJhN5OklpxUliqdNEUcXb4xZ/CINqtYGTjL5ukluKdKzQ0iWdUxyQ7B0539PAUhHKrCNWSQ==
 
 "@sinonjs/commons@^2.0.0":
   version "2.0.0"
@@ -1264,18 +1257,7 @@ exit@^0.1.2:
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
   integrity sha512-Zk/eNKV2zbjpKzrsQ+n1G6poVbErQxJ0LBOJXaKZ1EViLzH+hrLu9cdXI4zw9dBQJslwBEpbQ2P1oS7nDxs6jQ==
 
-expect@^29.0.0:
-  version "29.4.2"
-  resolved "https://registry.yarnpkg.com/expect/-/expect-29.4.2.tgz#2ae34eb88de797c64a1541ad0f1e2ea8a7a7b492"
-  integrity sha512-+JHYg9O3hd3RlICG90OPVjRkPBoiUH7PxvDVMnRiaq1g6JUgZStX514erMl0v2Dc5SkfVbm7ztqbd6qHHPn+mQ==
-  dependencies:
-    "@jest/expect-utils" "^29.4.2"
-    jest-get-type "^29.4.2"
-    jest-matcher-utils "^29.4.2"
-    jest-message-util "^29.4.2"
-    jest-util "^29.4.2"
-
-expect@^29.4.3:
+expect@^29.0.0, expect@^29.4.3:
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/expect/-/expect-29.4.3.tgz#5e47757316df744fe3b8926c3ae8a3ebdafff7fe"
   integrity sha512-uC05+Q7eXECFpgDrHdXA4k2rpMyStAYPItEDLyQDo5Ta7fVkJnNA/4zh/OIVkVVNZ1oOK1PipQoyNjuZ6sz6Dg==
@@ -1635,11 +1617,6 @@ jest-environment-node@^29.4.3:
     jest-mock "^29.4.3"
     jest-util "^29.4.3"
 
-jest-get-type@^29.4.2:
-  version "29.4.2"
-  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-29.4.2.tgz#7cb63f154bca8d8f57364d01614477d466fa43fe"
-  integrity sha512-vERN30V5i2N6lqlFu4ljdTqQAgrkTFMC9xaIIfOPYBw04pufjXRty5RuXBiB1d72tGbURa/UgoiHB90ruOSivg==
-
 jest-get-type@^29.4.3:
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-29.4.3.tgz#1ab7a5207c995161100b5187159ca82dd48b3dd5"
@@ -1672,7 +1649,7 @@ jest-leak-detector@^29.4.3:
     jest-get-type "^29.4.3"
     pretty-format "^29.4.3"
 
-jest-matcher-utils@^29.4.2, jest-matcher-utils@^29.4.3:
+jest-matcher-utils@^29.4.3:
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-29.4.3.tgz#ea68ebc0568aebea4c4213b99f169ff786df96a0"
   integrity sha512-TTciiXEONycZ03h6R6pYiZlSkvYgT0l8aa49z/DLSGYjex4orMUcafuLXYyyEDWB1RKglq00jzwY00Ei7yFNVg==
@@ -1682,7 +1659,7 @@ jest-matcher-utils@^29.4.2, jest-matcher-utils@^29.4.3:
     jest-get-type "^29.4.3"
     pretty-format "^29.4.3"
 
-jest-message-util@^29.4.2, jest-message-util@^29.4.3:
+jest-message-util@^29.4.3:
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-29.4.3.tgz#65b5280c0fdc9419503b49d4f48d4999d481cb5b"
   integrity sha512-1Y8Zd4ZCN7o/QnWdMmT76If8LuDv23Z1DRovBj/vcSFNlGCJGoO8D1nJDw1AdyAGUk0myDLFGN5RbNeJyCRGCw==
@@ -1824,7 +1801,7 @@ jest-snapshot@^29.4.3:
     pretty-format "^29.4.3"
     semver "^7.3.5"
 
-jest-util@^29.4.2, jest-util@^29.4.3:
+jest-util@^29.4.3:
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.4.3.tgz#851a148e23fc2b633c55f6dad2e45d7f4579f496"
   integrity sha512-ToSGORAz4SSSoqxDSylWX8JzkOQR7zoBtNRsA7e+1WUX5F8jrOwaNpuh1YfJHJKDHXLHmObv5eOjejUd+/Ws+Q==
