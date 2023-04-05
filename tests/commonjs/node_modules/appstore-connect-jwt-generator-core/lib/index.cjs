@@ -13,8 +13,8 @@ _export(exports, {
     token: ()=>token,
     default: ()=>_default
 });
-const _jsonwebtoken = /*#__PURE__*/ _interopRequireDefault(require("jsonwebtoken"));
-function _interopRequireDefault(obj) {
+const _jsonwebtoken = /*#__PURE__*/ _interop_require_default(require("jsonwebtoken"));
+function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
     };
