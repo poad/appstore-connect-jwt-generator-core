@@ -9,9 +9,15 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    tokenSync: ()=>tokenSync,
-    token: ()=>token,
-    default: ()=>_default
+    tokenSync: function() {
+        return tokenSync;
+    },
+    token: function() {
+        return token;
+    },
+    default: function() {
+        return _default;
+    }
 });
 const _jsonwebtoken = /*#__PURE__*/ _interop_require_default(require("jsonwebtoken"));
 function _interop_require_default(obj) {
