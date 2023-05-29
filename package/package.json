@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@types/jsonwebtoken": "*",
-    "got": ">=11.8.5",
+    "got": ">=13.0.0",
     "jsonwebtoken": "*",
     "log4js": "*",
     "regenerator-runtime": "*"
