@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8.6.3
+          run_install: |
+            - recursive: true
+              args: [--no-frozen-lockfile]
+  
       - name: setup Node
         uses: actions/setup-node@v3
         env :
@@ -38,13 +49,8 @@ jobs:
         working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Install
-        working-directory: package
-        run : yarn install
-        env :
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Build
-        run : yarn build
+        run : pnpm build
         working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
