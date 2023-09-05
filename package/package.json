@@ -57,9 +57,6 @@
     "log4js": "^6.9.1",
     "regenerator-runtime": "^0.13.11"
   },
-  "engines": {
-    "node": ">=16.0.0"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -70,5 +67,12 @@
         "@swc/jest"
       ]
     }
+  },
+  "packageManager": "pnpm@8.7.1",
+  "engines": {
+    "npm": "use pnpm please!",
+    "yarn": "use pnpm please!",
+    "pnpm": ">=8.7.1",
+    "node": ">=18.0.0"
   }
 }
