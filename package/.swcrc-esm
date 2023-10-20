@@ -1,26 +1,20 @@
 {
+  "$schema": "http://json.schemastore.org/swcrc",
   "test": ".*/*.(m)?ts$",
   "jsc": {
     "parser": {
       "syntax": "typescript",
       "tsx": false,
       "decorators": false,
-      "dynamicImport": false,
-      "exportDefaultFrom": false,
-      "decoratorsBeforeExport": false
+      "dynamicImport": false
     },
     "target": "es2021"
   },
   "minify": false,
   "module": {
-    "type": "es6",
-    "strict": false,
-    "strictMode": true,
-    "lazy": false,
-    "noInterop": false
+    "type": "es6"
   },
   "sourceMaps": true,
-  "inlineSourcesContent": true,
   "exclude": [
     "tests",
     ".*.js$",
