@@ -52,7 +52,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@types/jsonwebtoken": "^9.0.5",
+    "@types/jsonwebtoken": "^9.0.6",
     "jsonwebtoken": "^9.0.2",
     "log4js": "^6.9.1",
     "regenerator-runtime": "^0.13.11"
