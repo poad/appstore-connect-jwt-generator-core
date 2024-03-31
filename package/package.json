@@ -40,7 +40,7 @@
     "@swc/cli": "^0.1.65",
     "@swc/core": "^1.4.11",
     "@swc/jest": "^0.2.36",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "chokidar": "^3.6.0",
@@ -68,7 +68,7 @@
       ]
     }
   },
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
   "engines": {
     "npm": "use pnpm please!",
     "yarn": "use pnpm please!",
