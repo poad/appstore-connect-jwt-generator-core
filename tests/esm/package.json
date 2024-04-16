@@ -96,7 +96,7 @@
   "engines": {
     "npm": "use pnpm please!",
     "yarn": "use pnpm please!",
-    "pnpm": ">=8.7.1",
+    "pnpm": ">=9.0.0",
     "node": ">=18.0.0"
   }
 }
