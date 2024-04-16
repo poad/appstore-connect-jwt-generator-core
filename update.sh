@@ -21,7 +21,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-pnpm install && pnpm up -r && pnpm build && rm -rf node_modules && pnpm install --production && git add node_modules -f
+pnpm install && pnpm up -r && pnpm build && pnpm package
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
@@ -36,7 +36,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-pnpm install && pnpm up -r && rm -rf dist && pnpm build && pnpm package && rm -rf node_modules && pnpm install --production && git add node_modules dist -f
+pnpm install && pnpm up -r && pnpm build && pnpm package
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
@@ -51,7 +51,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-pnpm install && pnpm up -r && rm -rf dist && pnpm build && pnpm package && rm -rf node_modules && pnpm install --production && git add node_modules dist -f
+pnpm install && pnpm up -r && pnpm build && pnpm package
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}"
