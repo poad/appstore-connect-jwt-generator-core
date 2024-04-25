@@ -933,8 +933,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  electron-to-chromium@1.4.747:
-    resolution: {integrity: sha512-+FnSWZIAvFHbsNVmUxhEqWiaOiPMcfum1GQzlWCg/wLigVtshOsjXHyEFfmt6cFK6+HkS3QOJBv6/3OPumbBfw==}
+  electron-to-chromium@1.4.749:
+    resolution: {integrity: sha512-LRMMrM9ITOvue0PoBrvNIraVmuDbJV5QC9ierz/z5VilMdPOVMjOtpICNld3PuXuTZ3CHH/UPxX9gHhAPwi+0Q==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -1542,8 +1542,8 @@ packages:
     resolution: {integrity: sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==}
     engines: {node: '>=8'}
 
-  lru-cache@10.2.0:
-    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
+  lru-cache@10.2.1:
+    resolution: {integrity: sha512-tS24spDe/zXhWbNPErCHs/AGOzbKGHT+ybSBqmdLm8WZ1xXLWvH8Qn71QPAlqVhd0qUTWjy+Kl9JmISgDdEjsA==}
     engines: {node: 14 || >=16.14}
 
   lru-cache@4.1.5:
@@ -1777,8 +1777,8 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
-  react-is@18.2.0:
-    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+  react-is@18.3.0:
+    resolution: {integrity: sha512-wRiUsea88TjKDc4FBEn+sLvIDesp6brMbGWnJGjew2waAc9evdhja/2LvePc898HJbHw0L+MTWy7NhpnELAvLQ==}
 
   readable-stream@3.6.2:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
@@ -3015,7 +3015,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001612
-      electron-to-chromium: 1.4.747
+      electron-to-chromium: 1.4.749
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
@@ -3179,7 +3179,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  electron-to-chromium@1.4.747: {}
+  electron-to-chromium@1.4.749: {}
 
   emittery@0.13.1: {}
 
@@ -4010,7 +4010,7 @@ snapshots:
 
   lowercase-keys@2.0.0: {}
 
-  lru-cache@10.2.0: {}
+  lru-cache@10.2.1: {}
 
   lru-cache@4.1.5:
     dependencies:
@@ -4154,7 +4154,7 @@ snapshots:
 
   path-scurry@1.10.2:
     dependencies:
-      lru-cache: 10.2.0
+      lru-cache: 10.2.1
       minipass: 7.0.4
 
   path-type@4.0.0: {}
@@ -4181,7 +4181,7 @@ snapshots:
     dependencies:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
-      react-is: 18.2.0
+      react-is: 18.3.0
 
   prompts@2.4.2:
     dependencies:
@@ -4203,7 +4203,7 @@ snapshots:
 
   quick-lru@5.1.1: {}
 
-  react-is@18.2.0: {}
+  react-is@18.3.0: {}
 
   readable-stream@3.6.2:
     dependencies:
