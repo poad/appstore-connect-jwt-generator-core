@@ -1,27 +1,25 @@
-name: enables auto merge
+name: pill-request-auto-merge
 
 on:
   pull_request:
-    branches:
-      - main
 
 permissions:
   id-token: write
-  contents: read
+  contents: write
+  pull-requests: write
+  checks: write
 
 jobs:
-  configure:
+  pull-request-auto-merge:
     runs-on: ubuntu-latest
-
-    if: github.actor != 'dependabot[bot]'
-
+    if: github.actor == 'dependabot[bot]'
     steps:
-    - name: Pull request auto merge enabler
-      if: github.event_name == 'pull_request'
-      uses: poad/github-pull-request-auto-merge-enable-action@v2.0.1
-      with:
-        pull_request_number: ${{ github.event.pull_request.number }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: ${{ github.event.repository.name }}
-        owner: ${{ github.repository_owner }}
-        merge_method: SQUASH
+      - uses: actions/checkout@v4
+
+      - name: Enable auto-merge for Pull Request
+        run: |
+          gh pr review --approve "$PR_URL"
+          gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
