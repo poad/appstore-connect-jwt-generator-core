@@ -1,39 +1,27 @@
-name: dependabot-auto-merge
+name: enables auto merge
 
 on:
-  pull_request_target:
+  pull_request:
+    branches:
+      - main
 
 permissions:
-  actions: read
-  checks: write
-  contents: none
-  deployments: none
-  issues: none
-  packages: none
-  repository-projects: none
-  statuses: write
+  id-token: write
+  contents: read
 
 jobs:
-  auto-merge:
+  configure:
     runs-on: ubuntu-latest
 
-    if: github.actor == 'dependabot[bot]'
+    if: github.actor != 'dependabot[bot]'
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
-        with:
-          github-token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
-          config: .github/dependabot-auto-merge.yml
-
-      - name: Slack Notification (not success)
-        uses: lazy-actions/slatify@master
-        if: "! success()"
-        continue-on-error: true
-        with:
-          job_name: '*auto-merge*'
-          type: ${{ job.status }}
-          icon_emoji: ":octocat:"
-          url: ${{ secrets.SLACK_WEBHOOK }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Pull request auto merge enabler
+      if: github.event_name == 'pull_request'
+      uses: poad/github-pull-request-auto-merge-enable-action@v2.0.1
+      with:
+        pull_request_number: ${{ github.event.pull_request.number }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.event.repository.name }}
+        owner: ${{ github.repository_owner }}
+        merge_method: SQUASH
