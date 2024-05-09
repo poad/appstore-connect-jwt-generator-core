@@ -25,12 +25,26 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
-        id: pnpm-install
         with:
           run_install: |
             - recursive: true
+              cwd: package
               args: [--no-frozen-lockfile]
   
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+              cwd: tests/commonjs
+              args: [--no-frozen-lockfile]
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+              cwd: tests/esm
+              args: [--no-frozen-lockfile]
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
