@@ -23,13 +23,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          check-latest: true
+
       - uses: pnpm/action-setup@v4
-        name: Install pnpm
         with:
           run_install: |
             - recursive: true
               cwd: package
               args: [--no-frozen-lockfile]
+          package_json_file: package/package.json
   
       - uses: pnpm/action-setup@v4
         with:
@@ -37,6 +43,7 @@ jobs:
             - recursive: true
               cwd: tests/commonjs
               args: [--no-frozen-lockfile]
+          package_json_file: tests/commonjs/package.json
 
       - uses: pnpm/action-setup@v4
         with:
@@ -44,12 +51,7 @@ jobs:
             - recursive: true
               cwd: tests/esm
               args: [--no-frozen-lockfile]
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          check-latest: true
+          package_json_file: tests/esm/package.json
 
       - name: Build
         working-directory: package

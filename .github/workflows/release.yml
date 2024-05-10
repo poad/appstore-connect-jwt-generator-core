@@ -24,15 +24,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          run_install: |
-            - recursive: true
-              args: [--no-frozen-lockfile]
-  
       - name: setup Node
         uses: actions/setup-node@v4
         env :
@@ -42,6 +33,15 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope       : 'appstore-connect-jwt-generator-core'
           always-auth : true
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: |
+            - recursive: true
+              cwd: package
+              args: [--no-frozen-lockfile]
+          package_json_file: package/package.json
 
       - name: Can Publish
         run : npx can-npm-publish --verbose

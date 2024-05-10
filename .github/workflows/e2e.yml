@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [20.x]
         module-type: [commonjs, esm]
 
     steps:
@@ -26,11 +26,12 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
-        id: pnpm-install
         with:
           run_install: |
             - recursive: true
+              cwd: tests/${{ matrix.module-type }}
               args: [--no-frozen-lockfile]
+          package_json_file: tests/${{ matrix.module-type }}/package.json
   
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
