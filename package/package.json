@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.65",
-    "@swc/core": "^1.5.27",
+    "@swc/core": "^1.5.28",
     "@swc/jest": "^0.2.36",
     "@types/node": "^20.14.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
@@ -46,7 +46,7 @@
     "chokidar": "^3.6.0",
     "eslint": "^8.57.0",
     "jest": "^29.7.0",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "rimraf": "^5.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
