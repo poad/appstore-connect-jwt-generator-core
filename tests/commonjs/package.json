@@ -17,7 +17,7 @@
     "@vercel/ncc": "^0.36.1",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.3",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "appstore-connect-jwt-generator-core": "link:../../package"
