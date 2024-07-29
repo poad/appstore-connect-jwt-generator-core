@@ -38,9 +38,9 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.65",
-    "@swc/core": "^1.7.1",
+    "@swc/core": "^1.7.3",
     "@swc/jest": "^0.2.36",
-    "@types/node": "^20.14.12",
+    "@types/node": "^20.14.13",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "chokidar": "^3.6.0",
