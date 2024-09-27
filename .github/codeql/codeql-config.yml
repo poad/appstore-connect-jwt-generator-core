@@ -1,0 +1,6 @@
+paths:
+ - 'src'
+ - '@types'
+ - 'lib'
+ - 'esm'
+paths-ignore:
