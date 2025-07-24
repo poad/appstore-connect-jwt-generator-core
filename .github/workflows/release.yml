@@ -21,38 +21,38 @@ jobs:
     name: check version, add tag and release
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: setup Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          node-version: 18.x
+          node-version: 22.x
           registry-url: 'https://registry.npmjs.org'
           scope       : 'appstore-connect-jwt-generator-core'
           always-auth : true
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
           run_install: |
             - recursive: true
-              cwd: package
               args: [--no-frozen-lockfile]
-          package_json_file: package/package.json
 
       - name: Can Publish
         run : npx can-npm-publish --verbose
         working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Build
         run : pnpm build
         working-directory: package
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish
         run : npm publish --access=public
         working-directory: package
