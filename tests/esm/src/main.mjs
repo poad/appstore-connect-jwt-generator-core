@@ -1,0 +1,9 @@
+import { token } from 'appstore-connect-jwt-generator-core';
+import 'source-map-support/register';
+const main = {
+    main: () => {
+        console.log(typeof token);
+    }
+};
+export default main;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5tanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvbWFpbi5tdHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLEtBQUssRUFBRSxNQUFNLHFDQUFxQyxDQUFDO0FBQzVELE9BQU8sNkJBQTZCLENBQUM7QUFFckMsTUFBTSxJQUFJLEdBQUc7SUFDVCxJQUFJLEVBQUUsR0FBRyxFQUFFO1FBQ1AsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLEtBQUssQ0FBQyxDQUFDO0lBQzlCLENBQUM7Q0FDSixDQUFDO0FBRUYsZUFBZSxJQUFJLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB0b2tlbiB9IGZyb20gJ2FwcHN0b3JlLWNvbm5lY3Qtand0LWdlbmVyYXRvci1jb3JlJztcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcblxuY29uc3QgbWFpbiA9IHtcbiAgICBtYWluOiAoKSA9PiB7XG4gICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiB0b2tlbik7XG4gICAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgbWFpbjsiXX0=

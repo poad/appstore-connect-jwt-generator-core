@@ -1,37 +1,65 @@
-"use strict";
+import { JWTPayload, SignJWT, importPKCS8 } from 'jose';
 
-// ref: https://github.com/tc39/proposal-global
-const getGlobal = (): any => {
-    // the only reliable means to get the global object is
-    // `Function('return this')()`
-    // However, this causes CSP violations in Chrome apps.
-    if (typeof self !== 'undefined') { return self; }
-    if (typeof window !== 'undefined') { return window; }
-    if (typeof global !== 'undefined') { return global; }
-    throw new Error('unable to locate global object');
-}
+const payload = (
+  issuerId: string,
+  duration: number,
+): JWTPayload => ({
+  audience: 'appstoreconnect-v1',
+  expiresIn: duration,
+  issuer: issuerId,
+});
 
-const global = getGlobal();
-module.exports = exports = global.jwtGenCore;
+/**
+ * Synchronous token generation.
+ * @deprecated Use `token` instead.
+ * 
+ * @param privateKey
+ * @param issuerId 
+ * @param privateKeyId 
+ * @param duration 
+ * @returns 
+ */
+export function tokenSync(
+  privateKey: string | Buffer,
+  issuerId: string,
+  privateKeyId: string,
+  duration = 500,
+): string {
+  let result: string | undefined;
+  token(privateKey, issuerId, privateKeyId, duration)
+    .then((token) => {
+      result = token;
+      return token;
+    })
+    .catch((error) => {
+      throw new Error(`Failed to generate token: ${error.message}`);
+    });
+  return result ?? '';
+};
 
-// Needed for TypeScript and Webpack.
-if (global.fetch) {
-    exports.default = global.jwtGenCore.bind(global);
-}
+/**
+ * Asynchronous token generation.
+ * @param privateKey 
+ * @param issuerId 
+ * @param privateKeyId 
+ * @param duration 
+ * @returns 
+ */
+export async function token(
+  privateKey: string | Buffer,
+  issuerId: string,
+  privateKeyId: string,
+  duration = 500,
+): Promise<string> {
+  const key = await importPKCS8(privateKey.toString(), 'ES256');
+  return new SignJWT(payload(issuerId, duration))
+    .setProtectedHeader({ alg: 'ES256', kid: privateKeyId })
+    .sign(key);
+};
 
-export declare function tokenSync(
-    privateKey: string | Buffer,
-    issuerId: string,
-    privateKeyId: string,
-    duration: number | undefined,
-): string;
+const jwtGenCore = {
+  tokenSync,
+  token,
+};
 
-export declare function token(
-    privateKey: string | Buffer,
-    issuerId: string,
-    privateKeyId: string,
-    duration: number | undefined,
-): Promise<string>;
-
-exports.tokenSync = tokenSync;
-exports.token = token;
+export default jwtGenCore;

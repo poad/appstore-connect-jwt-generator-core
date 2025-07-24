@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [22.x, 24.x]
 
     steps:
       - name: Checkout
@@ -33,25 +33,7 @@ jobs:
         with:
           run_install: |
             - recursive: true
-              cwd: package
               args: [--no-frozen-lockfile]
-          package_json_file: package/package.json
-  
-      - uses: pnpm/action-setup@v4
-        with:
-          run_install: |
-            - recursive: true
-              cwd: tests/commonjs
-              args: [--no-frozen-lockfile]
-          package_json_file: tests/commonjs/package.json
-
-      - uses: pnpm/action-setup@v4
-        with:
-          run_install: |
-            - recursive: true
-              cwd: tests/esm
-              args: [--no-frozen-lockfile]
-          package_json_file: tests/esm/package.json
 
       - name: Build
         working-directory: package

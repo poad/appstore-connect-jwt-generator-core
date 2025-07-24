@@ -1,9 +1,0 @@
-import { tokenSync } from 'appstore-connect-jwt-generator-core';
-import 'source-map-support/register';
-const main = {
-    main: () => {
-        console.log(typeof tokenSync);
-    }
-};
-export default main;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5tanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbWFpbi5tdHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLHFDQUFxQyxDQUFDO0FBQ2hFLE9BQU8sNkJBQTZCLENBQUM7QUFFckMsTUFBTSxJQUFJLEdBQUc7SUFDVCxJQUFJLEVBQUUsR0FBRyxFQUFFO1FBQ1AsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLFNBQVMsQ0FBQyxDQUFDO0lBQ2xDLENBQUM7Q0FDSixDQUFDO0FBRUYsZUFBZSxJQUFJLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB0b2tlblN5bmMgfSBmcm9tICdhcHBzdG9yZS1jb25uZWN0LWp3dC1nZW5lcmF0b3ItY29yZSc7XG5pbXBvcnQgJ3NvdXJjZS1tYXAtc3VwcG9ydC9yZWdpc3Rlcic7XG5cbmNvbnN0IG1haW4gPSB7XG4gICAgbWFpbjogKCkgPT4ge1xuICAgICAgICBjb25zb2xlLmxvZyh0eXBlb2YgdG9rZW5TeW5jKTtcbiAgICB9XG59O1xuXG5leHBvcnQgZGVmYXVsdCBtYWluOyJdfQ==

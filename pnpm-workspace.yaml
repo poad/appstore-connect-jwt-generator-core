@@ -1,0 +1,12 @@
+packages:
+  - package
+  - tests
+onlyBuiltDependencies:
+  - '@swc/core'
+  - esbuild
+  - unrs-resolver
+
+enablePrePostScripts: true
+legacyPeerDeps: true
+autoInstallPeers: true
+strictPeerDependencies: false
