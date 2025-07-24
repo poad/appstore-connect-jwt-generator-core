@@ -7,6 +7,9 @@
       "ESNext"
     ],
     "moduleResolution": "bundler",
+    "declaration": true,
+    "declarationDir": "./esm",
+    "declarationMap": true,
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
