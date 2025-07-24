@@ -24,6 +24,12 @@ or
 yarn add appstore-connect-jwt-token-generator-core
 ```
 
+or
+
+```sh
+pnpm add appstore-connect-jwt-token-generator-core
+```
+
 ## Refernce
 
 <https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests>

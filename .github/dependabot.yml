@@ -18,8 +18,7 @@ updates:
   - package-ecosystem: npm
     directories:
       - '/package/'
-      - '/tests/commonjs/'
-      - '/tests/esm/'
+      - '/tests/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

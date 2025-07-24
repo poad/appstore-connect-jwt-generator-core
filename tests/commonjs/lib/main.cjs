@@ -1,5 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { tokenSync } = require('appstore-connect-jwt-generator-core');
-console.log(typeof tokenSync);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5janMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbWFpbi5jdHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxNQUFNLEVBQUUsU0FBUyxFQUFFLEdBQUcsT0FBTyxDQUFDLHFDQUFxQyxDQUFDLENBQUM7QUFFckUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLFNBQVMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgeyB0b2tlblN5bmMgfSA9IHJlcXVpcmUoJ2FwcHN0b3JlLWNvbm5lY3Qtand0LWdlbmVyYXRvci1jb3JlJyk7XG5cbmNvbnNvbGUubG9nKHR5cGVvZiB0b2tlblN5bmMpO1xuIl19

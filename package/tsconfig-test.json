@@ -4,6 +4,18 @@
     "rootDir": "./src",
     "outDir": "./dist",
   },
-  "exclude": ["node_modules",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.cts",
+    "src/**/*.mts",
+    "src/**/*.js",
+    "src/**/*.cjs",
+    "src/**/*.mjs",
+    "lib/**/*.js",
+    "lib/**/*.cjs",
+    "lib/**/*.mjs",
+  ],
+  "exclude": [
+    "node_modules",
     "tests"]
 }

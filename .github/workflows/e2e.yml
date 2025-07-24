@@ -17,8 +17,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
-        module-type: [commonjs, esm]
+        node-version: [22.x, 24.x]
+        module-type: [esm]
 
     steps:
       - name: Checkout
@@ -29,9 +29,7 @@ jobs:
         with:
           run_install: |
             - recursive: true
-              cwd: tests/${{ matrix.module-type }}
               args: [--no-frozen-lockfile]
-          package_json_file: tests/${{ matrix.module-type }}/package.json
   
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
