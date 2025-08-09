@@ -28,21 +28,6 @@ if [ $result -ne 0 ]; then
   exit $result
 fi
 
-cd "${CURRENT}"/tests/commonjs || exit
-result=$?
-if [ $result -ne 0 ]; then
-  cd "${CUR}" || exit
-  exit $result
-fi
-echo ""
-pwd
-pnpm self-update && pnpm install && pnpm up -r && pnpm audit --fix && pnpm up -r && pnpm build && pnpm package
-result=$?
-if [ $result -ne 0 ]; then
-  cd "${CUR}" || exit
-  exit $result
-fi
-
 cd "${CURRENT}"/tests/esm || exit
 result=$?
 if [ $result -ne 0 ]; then
