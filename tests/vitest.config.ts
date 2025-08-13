@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
-import { defineConfig } from 'vite';
+// eslint-disable-next-line import/no-unresolved
+import { defineConfig } from 'vitest/config';
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
