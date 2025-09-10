@@ -54,19 +54,16 @@ export async function token(
   try {
     const key = await importPKCS8(privateKey.toString(), 'ES256');
     return new SignJWT(payload(issuerId, duration))
-try {
-  const key = await importPKCS8(privateKey.toString(), 'ES256');
-  return new SignJWT(payload(issuerId, duration))
-    .setProtectedHeader({ alg: 'ES256', kid: privateKeyId })
-    .sign(key);
-} catch (error) {
-  if (error instanceof Error) {
-    // Sanitize error message to avoid potential sensitive data leakage
-    const safeMessage = error.message.replace(/([^:]+:).*/, '$1 [details omitted for security]');
-    throw new Error(`JWT token generation failed: ${safeMessage}`);
+      .setProtectedHeader({ alg: 'ES256', kid: privateKeyId })
+      .sign(key);
+  } catch (error) {
+    if (error instanceof Error) {
+      // Sanitize error message to avoid potential sensitive data leakage
+      const safeMessage = error.message.replace(/([^:]+:).*/, '$1 [details omitted for security]');
+      throw new Error(`JWT token generation failed: ${safeMessage}`);
+    }
+    throw new Error('JWT token generation failed: Unknown error occurred');
   }
-  throw new Error('JWT token generation failed: Unknown error occurred');
-}
 };
 
 const jwtGenCore = {
