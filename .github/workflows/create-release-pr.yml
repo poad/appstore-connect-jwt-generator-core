@@ -47,12 +47,12 @@ jobs:
       - name: Version bump
         id: version
         run: |
-          VERSION=$(pnpm version "$VERSION_TYPE" --no-git-tag-version)
-          pnpm --recursive exec pnpm pkg set version=\"$(node -p \"JSON.parse(fs.readFileSync('package.json', 'utf8')).version\")\"
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          VERSION=$(pnpm version $VERSION_TYPE --no-git-tag-version)
+          echo "version=$VERSION" >> $"GITHUB_OUTPUT"
+          pnpm --recursive exec pnpm pkg set version=$(node -p "JSON.parse(fs.readFileSync('package.json', 'utf8')).version")
         env:
           VERSION_TYPE: ${{ github.event.inputs.version }}
-      
+
       - name: Get release notes
         id: release-notes
         run: |
