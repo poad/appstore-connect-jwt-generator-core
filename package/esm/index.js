@@ -39,9 +39,13 @@ const payload = (issuerId, duration)=>({
         }).sign(key);
     } catch (error) {
         if (error instanceof Error) {
-            // Sanitize error message to avoid potential sensitive data leakage
-            const safeMessage = error.message.replace(/([^:]+:).*/, '$1 [details omitted for security]');
-            throw new Error(`JWT token generation failed: ${safeMessage}`);
+            // Use predefined error messages to avoid information leakage
+            if (error.message.includes('PKCS8')) {
+                throw new Error('JWT token generation failed: Invalid key format');
+            } else if (error.message.includes('sign')) {
+                throw new Error('JWT token generation failed: Signing operation failed');
+            }
+            throw new Error('JWT token generation failed: Internal error');
         }
         throw new Error('JWT token generation failed: Unknown error occurred');
     }
