@@ -14,7 +14,7 @@
   "module": {
     "type": "es6"
   },
-  "sourceMaps": true,
+  "sourceMaps": false,
   "exclude": [
     "tests",
     ".*.test.ts$",

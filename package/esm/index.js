@@ -31,11 +31,24 @@ const payload = (issuerId, duration)=>({
  * @param duration 
  * @returns 
  */ export async function token(privateKey, issuerId, privateKeyId, duration = 500) {
-    const key = await importPKCS8(privateKey.toString(), 'ES256');
-    return new SignJWT(payload(issuerId, duration)).setProtectedHeader({
-        alg: 'ES256',
-        kid: privateKeyId
-    }).sign(key);
+    try {
+        const key = await importPKCS8(privateKey.toString(), 'ES256');
+        return new SignJWT(payload(issuerId, duration)).setProtectedHeader({
+            alg: 'ES256',
+            kid: privateKeyId
+        }).sign(key);
+    } catch (error) {
+        if (error instanceof Error) {
+            // Use predefined error messages to avoid information leakage
+            if (error.message.includes('PKCS8')) {
+                throw new Error('JWT token generation failed: Invalid key format');
+            } else if (error.message.includes('sign')) {
+                throw new Error('JWT token generation failed: Signing operation failed');
+            }
+            throw new Error('JWT token generation failed: Internal error');
+        }
+        throw new Error('JWT token generation failed: Unknown error occurred');
+    }
 }
 const jwtGenCore = {
     tokenSync,
@@ -43,5 +56,3 @@ const jwtGenCore = {
 };
 export default jwtGenCore;
 
-
-//# sourceMappingURL=index.js.map
