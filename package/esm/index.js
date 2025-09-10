@@ -31,11 +31,15 @@ const payload = (issuerId, duration)=>({
  * @param duration 
  * @returns 
  */ export async function token(privateKey, issuerId, privateKeyId, duration = 500) {
-    const key = await importPKCS8(privateKey.toString(), 'ES256');
-    return new SignJWT(payload(issuerId, duration)).setProtectedHeader({
-        alg: 'ES256',
-        kid: privateKeyId
-    }).sign(key);
+    try {
+        const key = await importPKCS8(privateKey.toString(), 'ES256');
+        return new SignJWT(payload(issuerId, duration)).setProtectedHeader({
+            alg: 'ES256',
+            kid: privateKeyId
+        }).sign(key);
+    } catch (error) {
+        throw new Error(`JWT token generation failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
 }
 const jwtGenCore = {
     tokenSync,
@@ -43,5 +47,3 @@ const jwtGenCore = {
 };
 export default jwtGenCore;
 
-
-//# sourceMappingURL=index.js.map

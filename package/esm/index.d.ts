@@ -23,4 +23,3 @@ declare const jwtGenCore: {
     token: typeof token;
 };
 export default jwtGenCore;
-//# sourceMappingURL=index.d.ts.map
