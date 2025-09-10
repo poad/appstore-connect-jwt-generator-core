@@ -4,13 +4,13 @@ on:
   pull_request:
 
 permissions:
-  id-token: write
   contents: write
   pull-requests: write
-  checks: write
 
 jobs:
-  pull-request-auto-merge:
+  auto-merge:
+    if: github.event.pull_request.draft == false
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
