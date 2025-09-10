@@ -23,12 +23,5 @@
   },
   "dependencies": {
     "appstore-connect-jwt-generator-core": "link:../package"
-  },
-  "engines": {
-    "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
-    "pnpm": ">=8.0.0",
-    "node": ">=22.0.0"
-  },
-  "packageManager": "pnpm@10.13.1"
+  }
 }

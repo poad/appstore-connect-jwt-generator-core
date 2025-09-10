@@ -1,61 +1,55 @@
 name: Automatic release
 on:
-  release:
-    types:
-      - published
+  # release:
+  #   types:
+  #     - published
 
   workflow_dispatch:
 
-permissions:
-  actions: read
-  checks: write
-  contents: none
-  deployments: none
-  issues: none
-  packages: none
-  repository-projects: none
-  statuses: write
-
 jobs:
   release:
+    permissions:
+      contents: write
+      id-token: write  # OIDC
+      pull-requests: write  # PR comment
+
     name: check version, add tag and release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v5
-        env :
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          node-version: 22.x
+          node-version: 'lts/*'
           registry-url: 'https://registry.npmjs.org'
           scope       : 'appstore-connect-jwt-generator-core'
-          always-auth : true
           package-manager-cache: false
 
+      - name: Can Publish
+        run : npx can-npm-publish --verbose
+        working-directory: package
+
+      - name: Install latest npm
+        run: |
+          echo "Current npm version: $(npm -v)"
+          npm install -g npm@latest
+          echo "Updated npm version: $(npm -v)"
+
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
         with:
           run_install: |
             - recursive: true
               args: [--no-frozen-lockfile]
 
-      - name: Can Publish
-        run : npx can-npm-publish --verbose
-        working-directory: package
-        env :
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Build
         run : pnpm build
         working-directory: package
-        env :
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run : npm publish --access=public
+        run : pnpm -r publish --no-git-checks --access public --provenance
         working-directory: package
-        env :
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
