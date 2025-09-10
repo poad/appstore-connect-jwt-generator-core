@@ -71,11 +71,5 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
-  },
-  "engines": {
-    "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
-    "pnpm": ">=8.7.1",
-    "node": ">=22.0.0"
   }
 }
