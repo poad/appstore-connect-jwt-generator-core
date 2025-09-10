@@ -107,7 +107,7 @@ jobs:
           RELEASE_NOTES: ${{ steps.release-notes.outputs.RELEASE_NOTES }}
           VERSION: ${{ steps.version.outputs.version }}
         with:
-          branch: release/v${{ steps.version.outputs.version }}
+          branch: release/${{ steps.version.outputs.version }}
           delete-branch: true
           title: "Release ${{ steps.version.outputs.version }}"
           body: |
