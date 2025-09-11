@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           check-latest: true
-          package-manager-cache: false
+          package-manager-cache: pnpm
 
       - uses: pnpm/action-setup@v4
         with:
