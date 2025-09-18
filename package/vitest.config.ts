@@ -1,17 +1,17 @@
 /// <reference types="vitest" />
-// eslint-disable-next-line import/no-unresolved
+ 
 import { defineConfig } from 'vitest/config';
-import tsconfigPaths from "vite-tsconfig-paths";
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [
     tsconfigPaths({
-      projects: ['tsconfig-test.json']
-    })
+      projects: ['tsconfig-test.json'],
+    }),
   ],
   test: {
     coverage: {
-      reporter: ['json', 'html', 'cobertura']
-    }
+      reporter: ['json', 'html', 'cobertura'],
+    },
   },
 });
