@@ -10,3 +10,8 @@ enablePrePostScripts: true
 legacyPeerDeps: true
 autoInstallPeers: true
 strictPeerDependencies: false
+
+# one day
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+ - pnpm

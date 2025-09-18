@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
+      cooldown: 7
     allow:
       - dependency-type: all
     rebase-strategy: auto
@@ -22,6 +23,9 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
+      cooldown: 1
+      exclude:
+        - 'pnpm'
     allow:
       - dependency-type: all
     rebase-strategy: auto
