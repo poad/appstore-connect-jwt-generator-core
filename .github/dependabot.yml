@@ -23,7 +23,8 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      cooldown: 1
+    cooldown:
+      default-days: 1
       exclude:
         - 'pnpm'
     allow:
