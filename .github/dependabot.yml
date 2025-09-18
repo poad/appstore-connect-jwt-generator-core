@@ -5,7 +5,8 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      cooldown: 7
+    cooldown:
+      default-days: 1
     allow:
       - dependency-type: all
     rebase-strategy: auto
