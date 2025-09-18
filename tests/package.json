@@ -1,6 +1,6 @@
 {
   "name": "commonjs",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "esm/main.mjs",
   "license": "MIT",
   "type": "module",
