@@ -13,8 +13,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-
       - name: Enable auto-merge for Pull Request
         run: |
           gh pr review --approve "$PR_URL"
