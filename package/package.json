@@ -40,7 +40,7 @@
     "@eslint/js": "^9.39.1",
     "@stylistic/eslint-plugin": "^5.5.0",
     "@swc/cli": "^0.7.9",
-    "@swc/core": "^1.15.0",
+    "@swc/core": "^1.15.1",
     "@types/node": "^24.10.0",
     "@vitest/coverage-v8": "^4.0.8",
     "chokidar": "^4.0.3",
