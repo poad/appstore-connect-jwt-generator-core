@@ -1,17 +1,25 @@
 packages:
   - package
   - tests
+
+autoInstallPeers: true
+
+enablePrePostScripts: true
+
+legacyPeerDeps: true
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - pnpm
+
 onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
   - unrs-resolver
 
-enablePrePostScripts: true
-legacyPeerDeps: true
-autoInstallPeers: true
-strictPeerDependencies: false
+overrides:
+  js-yaml@<3.14.2: '>=3.14.2'
+  js-yaml@>=4.0.0 <4.1.1: '>=4.1.1'
 
-# one day
-minimumReleaseAge: 1440
-minimumReleaseAgeExclude:
- - pnpm
+strictPeerDependencies: false
