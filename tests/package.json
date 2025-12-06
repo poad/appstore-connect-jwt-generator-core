@@ -15,11 +15,11 @@
     "@swc/core": "^1.15.3",
     "@types/node": "^24.10.1",
     "@vercel/ncc": "^0.38.4",
-    "@vitest/coverage-v8": "^4.0.14",
+    "@vitest/coverage-v8": "^4.0.15",
     "source-map-support": "^0.5.21",
     "typescript": "^5.9.3",
     "vite": "^7.2.6",
-    "vitest": "^4.0.14"
+    "vitest": "^4.0.15"
   },
   "dependencies": {
     "appstore-connect-jwt-generator-core": "link:../package"
