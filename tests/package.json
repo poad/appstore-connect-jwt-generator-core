@@ -12,8 +12,8 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@swc/core": "^1.15.3",
-    "@types/node": "^24.10.3",
+    "@swc/core": "^1.15.4",
+    "@types/node": "^24.10.4",
     "@vercel/ncc": "^0.38.4",
     "@vitest/coverage-v8": "^4.0.15",
     "source-map-support": "^0.5.21",
