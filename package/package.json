@@ -52,7 +52,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-promise": "^7.2.1",
     "jiti": "^2.6.1",
-    "pnpm": "^10.26.2",
+    "pnpm": "^10.27.0",
     "prettier": "^3.7.4",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
