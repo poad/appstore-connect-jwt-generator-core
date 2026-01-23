@@ -40,7 +40,7 @@
     "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.7.0",
     "@swc/cli": "^0.7.10",
-    "@swc/core": "^1.15.8",
+    "@swc/core": "^1.15.10",
     "@types/node": "^25.0.9",
     "@vitest/coverage-v8": "^4.0.17",
     "chokidar": "^5.0.0",
@@ -56,7 +56,7 @@
     "prettier": "^3.8.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.0",
+    "typescript-eslint": "^8.53.1",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.0.4",
     "vitest": "^4.0.17"
