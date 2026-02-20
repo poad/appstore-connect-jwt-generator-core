@@ -42,7 +42,7 @@ jobs:
         with:
           run_install: |
             - recursive: true
-              args: [--no-frozen-lockfile]
+              args: [--frozen-lockfile]
       
       # No need to install dependencies - npm version works without them
       - name: Version bump
@@ -51,6 +51,7 @@ jobs:
           VERSION=$(pnpm version "$VERSION_TYPE" --no-git-tag-version)
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           pnpm --recursive exec pnpm pkg set version=$(node -p "JSON.parse(fs.readFileSync('package.json', 'utf8')).version")
+          pnpm install --no-frozen-lockfile
         env:
           VERSION_TYPE: ${{ github.event.inputs.version }}
 

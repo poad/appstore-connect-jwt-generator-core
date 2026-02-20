@@ -27,6 +27,7 @@ const eslintConfig = defineConfig(
       'cdk.out',
       'dist',
       'bin',
+      'esm',
     ],
   },
   eslint.configs.recommended,

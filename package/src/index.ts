@@ -60,13 +60,18 @@ export async function token(
     if (error instanceof Error) {
       // Use predefined error messages to avoid information leakage
       if (error.message.includes('PKCS8')) {
-        throw new Error('JWT token generation failed: Invalid key format');
+        throw new Error('JWT token generation failed: Invalid key format', error);
       } else if (error.message.includes('sign')) {
-        throw new Error('JWT token generation failed: Signing operation failed');
+        throw new Error('JWT token generation failed: Signing operation failed', error);
       }
-      throw new Error('JWT token generation failed: Internal error');
+      throw new Error('JWT token generation failed: Internal error', error);
     }
-    throw new Error('JWT token generation failed: Unknown error occurred');
+    if (error) {
+      throw new Error('JWT token generation failed: Unknown error occurred', error);
+    } else {
+      // eslint-disable-next-line preserve-caught-error
+      throw new Error('JWT token generation failed: Unknown error occurred');
+    }
   }
 };
 

@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@swc/core": "^1.15.11",
-    "@types/node": "^24.10.12",
+    "@types/node": "^24.10.13",
     "@vercel/ncc": "^0.38.4",
     "@vitest/coverage-v8": "^4.0.18",
     "source-map-support": "^0.5.21",
