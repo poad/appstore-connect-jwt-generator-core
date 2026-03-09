@@ -36,7 +36,7 @@
     "test": "vitest run --silent=false --coverage"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.2",
+    "@eslint/compat": "^2.0.3",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@swc/cli": "^0.8.0",
@@ -44,7 +44,7 @@
     "@types/node": "^25.3.5",
     "@vitest/coverage-v8": "^4.0.18",
     "chokidar": "^5.0.0",
-    "eslint": "^10.0.2",
+    "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-flowtype": "^8.0.3",
