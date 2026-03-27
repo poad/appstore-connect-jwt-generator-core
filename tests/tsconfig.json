@@ -3,15 +3,12 @@
     "target": "esnext",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "rootDirs": ["./src"],
+    "rootDirs": ["."],
     "declaration": true,
     "declarationMap": false,
     "sourceMap": false,
     "outDir": "./esm",
-    "inlineSourceMap": true,
-    "inlineSources": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "types": ["node"]
@@ -20,6 +17,7 @@
     "node_modules",
     "./esm",
     "**/*.test.ts",
-    "tests"
+    "tests",
+    "vitest.config.ts"
   ]
 }
