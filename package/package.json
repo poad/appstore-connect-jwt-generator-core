@@ -39,7 +39,7 @@
     "@eslint/compat": "^2.0.3",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@swc/cli": "^0.8.0",
+    "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.21",
     "@types/node": "^25.5.0",
     "@vitest/coverage-v8": "^4.1.2",
