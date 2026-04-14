@@ -41,7 +41,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.24",
-    "@types/node": "^25.5.2",
+    "@types/node": "^25.6.0",
     "@vitest/coverage-v8": "^4.1.4",
     "chokidar": "^5.0.0",
     "eslint": "^10.2.0",
