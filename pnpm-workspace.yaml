@@ -2,6 +2,11 @@ packages:
   - package
   - tests
 
+allowBuilds:
+  '@swc/core': false
+  esbuild: false
+  unrs-resolver: false
+
 autoInstallPeers: true
 
 enablePrePostScripts: true
