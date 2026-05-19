@@ -25,9 +25,7 @@ updates:
       interval: daily
       timezone: Asia/Tokyo
     cooldown:
-      default-days: 3
-      exclude:
-        - 'pnpm'
+      default-days: 7
     allow:
       - dependency-type: all
     rebase-strategy: auto
