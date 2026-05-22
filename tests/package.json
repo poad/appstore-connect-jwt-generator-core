@@ -14,11 +14,11 @@
     "@swc/core": "^1.15.33",
     "@types/node": "^24.12.4",
     "@vercel/ncc": "^0.38.4",
-    "@vitest/coverage-v8": "^4.1.6",
+    "@vitest/coverage-v8": "^4.1.7",
     "typescript": "^6.0.3",
-    "vite": "^8.0.13",
+    "vite": "^8.0.14",
     "vite-tsconfig-paths": "^6.1.1",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.7"
   },
   "dependencies": {
     "appstore-connect-jwt-generator-core": "link:../package"
