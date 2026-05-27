@@ -22,7 +22,7 @@ fi
 echo ""
 pwd
 
-if ! (pnpm self-update && pnpm install -r && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm build && pnpm package && pnpm install -r --no-frozen-lockfile); then
+if ! (disable-checkout-persist-credentials && pnx pnpm self-update && pnpm install -r && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm build && pnpm package && pnpm install -r --no-frozen-lockfile); then
   cd "${CUR}" || exit
   exit 1
 fi
@@ -36,7 +36,7 @@ fi
 echo ""
 pwd
 
-if ! (pnpm self-update && pnpm install && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm build && pnpm package && pnpm install -r --no-frozen-lockfile); then
+if ! (pnx pnpm self-update && pnpm install && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm build && pnpm package && pnpm install -r --no-frozen-lockfile); then
   cd "${CUR}" || exit
   exit 1
 fi
