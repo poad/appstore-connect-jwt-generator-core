@@ -11,8 +11,8 @@
     "build": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
-    "@swc/core": "^1.15.40",
-    "@types/node": "^24.13.1",
+    "@swc/core": "^1.15.41",
+    "@types/node": "^24.13.2",
     "@vercel/ncc": "^0.38.4",
     "@vitest/coverage-v8": "^4.1.8",
     "typescript": "^6.0.3",
