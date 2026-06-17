@@ -13,7 +13,7 @@
   "devDependencies": {
     "@swc/core": "^1.15.41",
     "@types/node": "^24.13.2",
-    "@vercel/ncc": "^0.38.4",
+    "@vercel/ncc": "^0.44.0",
     "@vitest/coverage-v8": "^4.1.8",
     "typescript": "^6.0.3",
     "vite": "^8.0.16",
