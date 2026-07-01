@@ -11,14 +11,14 @@
     "build": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
-    "@swc/core": "^1.15.41",
+    "@swc/core": "^1.15.43",
     "@types/node": "^24.13.2",
-    "@vercel/ncc": "^0.44.0",
-    "@vitest/coverage-v8": "^4.1.8",
+    "@vercel/ncc": "^0.44.1",
+    "@vitest/coverage-v8": "^4.1.9",
     "typescript": "^6.0.3",
-    "vite": "^8.0.16",
+    "vite": "^8.1.1",
     "vite-tsconfig-paths": "^6.1.1",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.9"
   },
   "dependencies": {
     "appstore-connect-jwt-generator-core": "link:../package"
