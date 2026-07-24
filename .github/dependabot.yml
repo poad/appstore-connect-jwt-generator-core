@@ -26,6 +26,9 @@ updates:
       timezone: Asia/Tokyo
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: typescript
+        versions: ~7.0.0
     allow:
       - dependency-type: all
     rebase-strategy: auto
